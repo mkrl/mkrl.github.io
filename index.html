@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>plainterm.js</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        .container > div {
+            margin: 0 auto;
+        }
+        </style>
+    </head>
+<body>
+
+<center><h3>Terminal</h3></center>
+
+<div class="container">
+<div id="terminal">
+</div>
+</div>
+
+<script src="./plainterm.js"></script>
+<script>
+var settings = {
+    id: "terminal",
+    prompt: "user@mkrl.xyz:~$ ",
+    commands: {
+        about: {
+            name: "about",
+            description: "about the module",
+            func: function(){plainterm.print('A dead simple lightweight pure Javascript terminal "emulator" that is intended to be used for entertainment purposes. Written in one night.')}
+        },
+        repo: {
+            name: "repo",
+            description: "GitHub repository",
+            func: function(){plainterm.print('<a href="https://github.com/mkrl/plainterm.js" target="blank">Click</a>')}
+        },
+        echo: {
+            name: "echo",
+            description: "a test command with one echo arg",
+            parameters: ["a string to be echoed in console"],
+            func: function(params){plainterm.print(params[0])}
+        },
+        multiply: {
+            name: "multiply",
+            description: "multiply two numbers",
+            parameters: ["number one", "number two"],
+            func: function(params){plainterm.print(params[0]*params[1])}
+        }
+    }
+};
+
+plainterm.init(settings);
+</script>
+</body>
+</html>
