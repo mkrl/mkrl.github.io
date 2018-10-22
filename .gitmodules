@@ -1,0 +1,3 @@
+[submodule "plainterm"]
+	path = plainterm
+	url = https://github.com/mkrl/plainterm.js
