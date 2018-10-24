@@ -98,8 +98,19 @@ body.x > .logo {
 }
 
 .content.c {
+    min-height: 13rem;
     border-bottom: 1px #e6e6e6 solid;
     box-shadow: inset 0px -5px 20px -13px #000000ab;
+}
+p.more {
+    position: absolute;
+    margin-right: 46%;
+    padding-bottom: 1rem;
+    border-bottom: 1px grey solid;
+    top: -240px;
+    left: 0;
+    width: 300px;
+    display: none;
 }
 
 .is {
@@ -120,4 +131,3 @@ body.x > .logo {
     -webkit-transform: translate(0, -25px);
     transform: translate(0, -25px)
 }
-
