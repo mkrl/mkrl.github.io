@@ -1,0 +1,123 @@
+body {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: white;
+    background-color: #000;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+body.x {
+    background-color: white;
+    color: #000;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.logo {
+    display: none;
+}
+
+.terminal, .container {
+    width: 100%;
+    -webkit-transition: width 500ms, height 500ms, -webkit-transform 500ms;
+    transition: width 500ms, height 500ms, transform 500ms;
+}
+
+.terminal {
+    height: 93vh;
+}
+
+.content {
+    height: 0;
+    display: none;
+    padding: 2rem 4rem 4rem 4rem;
+}
+
+h1 {
+    text-align: right;
+    margin-bottom: 4rem;
+}
+
+body.x > .container {
+    align-self: center;
+    margin-top: 4rem;
+    width: 992px;
+    max-width: 992px;
+    box-shadow: 0px 3px 47px 0px #00000045;
+}
+body.x > .container > .content {
+    height: auto;
+    display: block;
+    position: relative;
+    background-color: white;
+    padding-bottom: 8rem;
+}
+
+body.x > .container > .terminal {
+    height: 200px;
+    width: auto;
+}
+
+body.x > .logo {
+    margin-top: 3rem;
+    width: 140px;
+    display: flex;
+    align-self: center;
+}
+.m {
+    stroke-dasharray: 120;
+    animation: dash 1100ms linear forwards;
+}
+.l {
+    stroke-dasharray: 120;
+    animation: dash 800ms linear forwards;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: #545454; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #717171; 
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 240;
+  }
+}
+
+.content.c {
+    border-bottom: 1px #e6e6e6 solid;
+    box-shadow: inset 0px -5px 20px -13px #000000ab;
+}
+
+.is {
+    bottom: -45px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.i {
+    width: 4.5rem;
+    margin-right: 4rem;
+    transition: all 150ms ease-in-out;
+}
+
+.i:hover {
+    -moz-transform: translate(0, -25px);
+    -webkit-transform: translate(0, -25px);
+    transform: translate(0, -25px)
+}
+

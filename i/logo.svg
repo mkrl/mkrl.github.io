@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49.788mm" height="55.365mm" version="1.1" viewBox="0 0 49.788 55.365" xmlns="http://www.w3.org/2000/svg" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb">
+ <g transform="translate(-78.616 -64.634)" fill="none">
+  <g stroke="#000">
+   <path d="m115.28 119.54 0.17394-46.569-12.269 15.197-11.832-14.852 0.30363 46.224" stroke-linejoin="round" stroke-width="4.865"/>
+   <path d="m80.509 72.104h46.113v46.113h-46.113z" stroke-width="3.565" style="paint-order:stroke fill markers"/>
+   <path d="m78.619 66.567 49.756 0.06682" stroke-width="3.865"/>
+  </g>
+ </g>
+</svg>
