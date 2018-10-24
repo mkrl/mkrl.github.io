@@ -104,10 +104,9 @@ body.x > .logo {
 }
 p.more {
     position: absolute;
-    margin-right: 46%;
     padding-bottom: 1rem;
     border-bottom: 1px grey solid;
-    top: -240px;
+    top: -200px;
     left: 0;
     width: 300px;
     display: none;
@@ -131,3 +130,8 @@ p.more {
     -webkit-transform: translate(0, -25px);
     transform: translate(0, -25px)
 }
+
+.i:hover > p.more {
+    display: block;
+}
+
