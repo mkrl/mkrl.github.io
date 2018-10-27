@@ -61,6 +61,7 @@ body.x > .container > .content {
 body.x > .container > .terminal {
     height: 200px;
     width: auto;
+    z-index: 2;
 }
 
 body.x > .logo {
@@ -97,23 +98,32 @@ body.x > .logo {
   }
 }
 
-.content.c {
+body.x > .container > .content.c {
     min-height: 13rem;
-    border-bottom: 1px #e6e6e6 solid;
-    box-shadow: inset 0px -5px 20px -13px #000000ab;
 }
+
+.content.c {}
+
+.content.c > h1, .content.c > p{
+    float: right;
+    padding-left: 69%;
+    text-align: right;
+}
+
+
+
 p.more {
     position: absolute;
     padding-bottom: 1rem;
     border-bottom: 1px grey solid;
-    top: -200px;
+    top: 175px;
     left: 0;
     width: 300px;
     display: none;
 }
 
 .is {
-    bottom: -45px;
+    top: -45px;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -126,9 +136,9 @@ p.more {
 }
 
 .i:hover {
-    -moz-transform: translate(0, -25px);
-    -webkit-transform: translate(0, -25px);
-    transform: translate(0, -25px)
+    -moz-transform: translate(0, 25px);
+    -webkit-transform: translate(0, 25px);
+    transform: translate(0, 25px)
 }
 
 .i:hover > p.more {
