@@ -1,0 +1,29 @@
+{
+  "name": "mkrl",
+  "version": "1.0.0",
+  "description": "Personal homepage.",
+  "main": "source/mkrl.js",
+  "devDependencies": {
+    "grunt": ">=0.4.5 <1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.0.0",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "grunt-file-info": "^1.0.14",
+    "grunt-string-replace": "^1.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Nothing to test, really\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkrl/mkrl.github.io.git"
+  },
+  "author": "Mikhail Korolev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkrl/mkrl.github.io/issues"
+  },
+  "homepage": "https://mkrl.xyz"
+}
