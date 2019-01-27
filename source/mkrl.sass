@@ -10,14 +10,15 @@ body
   justify-content: center
   flex-direction: column
   &.x
-    background-color: white
+    background: linear-gradient(#BC3738, #18564B)
     color: #000
     -webkit-transition: background-color 500ms linear
     -ms-transition: background-color 500ms linear
     transition: background-color 500ms linear
 
-.logo
+.logo, .bg
   display: none
+  pointer-events: none
 
 .terminal, .container
   width: 100%
@@ -43,23 +44,33 @@ body.x
     width: 992px
     max-width: 992px
     box-shadow: 0px 3px 47px 0px #00000045
-      .terminal
-        height: 200px
-        width: auto
-        z-index: 2
+    .content
+      height: auto
+      display: block
+      position: relative
+      background-color: white
+      padding-bottom: 8rem
+    .terminal
+      height: 200px
+      width: auto
+      z-index: 2
+  .bg
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    width: 100%
+    z-index: -1
   .logo
     margin-top: 3rem
     width: 140px
-    display: flex
+    display: block
     align-self: center
 
-.m
-  stroke-dasharray: 120
-  animation: dash 1100ms linear forwards
+#letters
+  opacity: 1
+  animation: fade 500ms linear forwards
 
-.l
-  stroke-dasharray: 120
-  animation: dash 800ms linear forwards
 
 \::-webkit-scrollbar
   width: 10px
@@ -72,9 +83,9 @@ body.x
   &:hover
     background: #717171
 
-@keyframes dash
+@keyframes fade
   to
-    stroke-dashoffset: 240
+    opacity: 0
 
 body.x > .container > .content.c
   min-height: 13rem
