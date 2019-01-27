@@ -1,8 +1,6 @@
-# Server scripts for development
-server.sh
-server.bat
-# Releases created by Grunt
-releases/
+# SASS cache
+.sass-cache
+
 # Logs
 logs
 *.log
