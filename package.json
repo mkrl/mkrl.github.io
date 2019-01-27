@@ -5,9 +5,11 @@
   "main": "source/mkrl.js",
   "devDependencies": {
     "grunt": ">=0.4.5 <1.0.0",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-htmlmin": "^3.0.0",
     "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^4.0.0",
     "grunt-contrib-uglify-es": "^3.3.0",
     "grunt-file-info": "^1.0.14",

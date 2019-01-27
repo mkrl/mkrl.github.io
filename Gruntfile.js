@@ -1,9 +1,19 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    sass: {                              
+      dist: {                            
+        options: {                       
+          style: 'expanded',
+        },
+        files: {                         
+          'source/build/s.css': 'source/<%= pkg.name %>.sass',       
+        }
+      }
+    },
     cssmin: {
       target: {
-        src : "source/<%= pkg.name %>.css",
+        src : "source/build/s.css",
         dest : "s.css"
       }
     },
@@ -83,14 +93,17 @@ module.exports = function(grunt) {
          'index.html': 'source/build/h.html'
        }
      }
-    }
+    },
+    clean: ['source/build']
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-string-replace');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-file-info');
-  grunt.registerTask('default', ['jshint','uglify', 'cssmin', 'string-replace:inline', 'htmlmin', 'file_info', 'string-replace:size']);
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'cssmin', 'string-replace:inline', 'htmlmin', 'file_info', 'string-replace:size', 'clean']);
 };
