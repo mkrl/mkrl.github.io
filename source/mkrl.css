@@ -10,6 +10,9 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+/*.x for the "X session" running */ 
+
 body.x {
     background-color: white;
     color: #000;
@@ -50,6 +53,8 @@ body.x > .container {
     max-width: 992px;
     box-shadow: 0px 3px 47px 0px #00000045;
 }
+
+
 body.x > .container > .content {
     height: auto;
     display: block;
@@ -63,6 +68,8 @@ body.x > .container > .terminal {
     width: auto;
     z-index: 2;
 }
+
+/* animate logo that actually looks different without the animation */
 
 body.x > .logo {
     margin-top: 3rem;
@@ -79,6 +86,14 @@ body.x > .logo {
     animation: dash 800ms linear forwards;
 }
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: 240;
+  }
+}
+
+/* still waiting for Firefox to implement scrollbar styling 20 years after it has been introduced */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -92,11 +107,6 @@ body.x > .logo {
     background: #717171; 
 }
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 240;
-  }
-}
 
 body.x > .container > .content.c {
     min-height: 13rem;
@@ -145,3 +155,49 @@ p.more {
     display: block;
 }
 
+/* responsive queries */
+
+@media only screen and (max-width: 992px) {
+    body.x > .container {
+        width: 100%;
+        max-width: auto;
+    }
+    body.x > .container > .content.c {
+        min-height: 700px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .is {
+        top: 0;
+        position: relative;
+        flex-direction: column;
+        order: 1;
+    }
+    .i:hover {
+    -moz-transform: translate(25px, 0);
+    -webkit-transform: translate(25px, 0);
+    transform: translate(25px, 0)
+    }
+
+    p.more {
+        position: relative;
+        padding-bottom: 1rem;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+    .i {
+        margin-bottom: 1.5rem;
+    }
+    .content.c > h1 {
+        margin-bottom: 1rem;
+    }
+    .content.c > p {
+        margin-bottom: 3rem;
+    }
+    .content.c > h1, .content.c > p{
+        padding-left: 20%;
+    }
+}

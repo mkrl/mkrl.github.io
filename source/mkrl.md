@@ -7,7 +7,7 @@ Can you build a responsive website that is modern, does look good, and works rig
 
 ### Stuff
 
-[plainterm.js](https://github.com/mkrl/plainterm.js) - pure JS lightweight terminal "emulator"
+[plainterm.js](https://github.com/mkrl/plainterm.js) - pure JS lightweight terminal "emulator".
 
 [node.js](https://nodejs.org/) running [grunt](https://gruntjs.com/) as build tools.
 
@@ -17,6 +17,7 @@ Build with:
 
 ```
 npm install
+git submodule update --remote --merge
 grunt
 ```
 

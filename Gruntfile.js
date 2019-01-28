@@ -105,5 +105,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-file-info');
   grunt.loadNpmTasks('grunt-contrib-clean');
+
   grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'cssmin', 'string-replace:inline', 'htmlmin', 'file_info', 'string-replace:size', 'clean']);
 };
