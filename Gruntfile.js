@@ -83,7 +83,8 @@ module.exports = function(grunt) {
          'index.html': 'source/build/h.html'
        }
      }
-    }
+    },
+    clean: ['./source/build']
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
@@ -92,5 +93,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-string-replace');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-file-info');
-  grunt.registerTask('default', ['jshint','uglify', 'cssmin', 'string-replace:inline', 'htmlmin', 'file_info', 'string-replace:size']);
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.registerTask('default', ['jshint','uglify', 'cssmin', 'string-replace:inline', 'htmlmin', 'file_info', 'string-replace:size', 'clean']);
 };

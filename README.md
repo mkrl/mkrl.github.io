@@ -23,4 +23,4 @@ grunt
 
 Check out the gruntfile for build steps details.
 
-A total amount of traffic required to download and view this site is: 12.4 kB (5.1 kB gzipped), including all the code, design, logo and a JavaScript library.
+A total amount of traffic required to download and view this site is: 12.3 kB (5.1 kB gzipped), including all the code, design, logo and a JavaScript library.

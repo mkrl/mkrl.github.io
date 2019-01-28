@@ -159,14 +159,6 @@ p.more {
 
 @media only screen and (max-width: 992px) {
     body.x > .container {
-        margin-top: 4rem;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    body.x > .container {
-        margin-top: 4rem;
         width: 100%;
         max-width: auto;
     }
