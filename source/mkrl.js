@@ -1,3 +1,11 @@
+function getNorris() {
+    const url = 'http://api.icndb.com/jokes/random?limitTo=[nerdy]';
+    fetch(url).then(data=>{return data.json();})
+    .then(res=>{plainterm.print(res.value.joke);})
+    .catch(error=>plainterm.print(error));
+}
+
+
 var settings = {
     welcome: "Hi. Make yourself at home. Don't hesitate to ask for help if you need it.",
     id: "terminal",
@@ -37,6 +45,11 @@ var settings = {
             name: "resume",
             description: "download my resume",
             func: function(){plainterm.print('Working on it(tm)');}
+        },
+        chuck: {
+            name: "chuck",
+            description: "fetch a Chuck Norris joke",
+            func: function(){getNorris();}
         },
         repo: {
             name: "repo",
