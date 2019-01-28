@@ -1,9 +1,9 @@
 ## A homepage of mine
 
 Today is the era of previously unreachable download speeds, unlimited bandwidth and constantly increasing computing resources.
-With an incredibly large amount of third-party JavaScript libraries we sometimes tend to forget how to write pure, simple and lightweight code for simple tasks.
+With an incredibly large amount of third-party libraries we sometimes tend to forget how to write pure, simple and lightweight code for simple tasks.
 
-This website is more of a personal reminder to myself: keep things simple and modern if the technology lets you to do so.
+Can you build a responsive website that is modern, does look good, and works right? The answer is yes, you can at least try to.
 
 ### Stuff
 
@@ -23,4 +23,4 @@ grunt
 
 Check out the gruntfile for build steps details.
 
-A total amount of traffic required to download and view this site is: 12.4 kB (5.1 kB gzipped), including all the code, design, logo and a JavaScript library.
+A total amount of traffic required to download and view this site is: 28.1 kB (11.6 kB gzipped), including all the code, design, graphics and a JavaScript library.
