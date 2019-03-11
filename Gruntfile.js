@@ -1,6 +1,14 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    shell: {
+      multiple: {
+        command: [
+          'hackmyresume build ./resume/en/mkrl.json TO ./resume/en/mkrl.all -t fresh-theme-positive/en',
+          'hackmyresume build ./resume/ru/mkrl.json TO ./resume/ru/mkrl.all -t fresh-theme-positive/ru'
+        ].join('&&')
+      }
+    },
     sass: {                              
       dist: {                            
         options: {                       
@@ -105,6 +113,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-file-info');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-shell');
+  grunt.loadTasks('./tasks');
 
   grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'cssmin', 'string-replace:inline', 'htmlmin', 'file_info', 'string-replace:size', 'clean']);
+  grunt.registerTask('resume', ['shell']);
 };
