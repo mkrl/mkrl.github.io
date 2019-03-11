@@ -1,6 +1,6 @@
 [submodule "plainterm"]
 	path = plainterm
-	url = git@github.com:mkrl/plainterm.js.git
+	url = https://github.com/mkrl/plainterm.js.git
 [submodule "fresh-theme-positive"]
 	path = fresh-theme-positive
-	url = git@github.com:mkrl/fresh-theme-positive.git
+	url = https://github.com/mkrl/fresh-theme-positive.git
