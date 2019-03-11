@@ -1,5 +1,5 @@
 function getNorris() {
-    const url = 'http://api.icndb.com/jokes/random?limitTo=[nerdy]';
+    const url = 'https://api.icndb.com/jokes/random?limitTo=[nerdy]';
     fetch(url).then(data=>{return data.json();})
     .then(res=>{plainterm.print(res.value.joke);})
     .catch(error=>plainterm.print(error));
