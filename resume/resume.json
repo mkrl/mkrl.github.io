@@ -1,0 +1,116 @@
+{
+  "basics": {
+    "label": "Front-end developer",
+    "email": "self@mkrl.xyz",
+    "phone": "+7 964 100 98 03",
+    "website": "https://mkrl.xyz",
+    "name": "Mikhail Korolev",
+    "summary": "Front-end developer with a passion to Rails",
+    "picture": "",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "mkrl",
+        "url": "https://github.com/mkrl"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Irkutsk State University",
+      "website": "https://isu.ru",
+      "position": "Web developer",
+      "startDate": "2014.10",
+      "summary": "Maintaining a high variety of educational web services. Developing design prototypes from Scratch into HTML/CSS. Supporting legacy code on a regular basis. Basic SQL: Postgresql, MySQL",
+      "highlights": [
+        "Ported a handful of legacy Open CMS websites to the modern stack.",
+        "Developed several purely front-end applications working with the remote CRM API (1C).",
+        "Successfully pushed Ruby on Rails into our team stack for the sake of easing the process of developing small applications."
+      ]
+    },
+    {
+      "company": "Self-employed",
+      "position": "Freelance web-development and design",
+      "startDate": "2013",
+      "endDate": "2014-10",
+      "summary": "Landing pages, plain simple CMS-based websites for small companies, web design, prototyping. PHP."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "intermediate",
+      "keywords": [
+        "HTML",
+        "BEM",
+        "CSS/Sass",
+        "JavaScript/ES6",
+        "TypeScript",
+        "Vue"
+      ]
+    },
+    {
+      "name": "General tools",
+      "level": "advanced",
+      "keywords": [
+        "Git",
+        "Linux",
+        "Grunt",
+        "Webpack",
+        "Basic Linux administration"
+      ]
+    },
+    {
+      "name": "Back-end and utility",
+      "level": "beginner",
+      "keywords": [
+        "Ruby",
+        "Ruby on Rails",
+        "rspec",
+        "CI/CD",
+        "Postgresql",
+        "Python"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "GitHub",
+      "summary": "I use GitHub on a daily basis. Starting from my todo list and monitoring OSS I'm interested in to contributing, working and sharing projects of my own.",
+      "keywords": [
+        "GitHub",
+        "git",
+        "GitHub Flow",
+        "GitHub API"
+      ]
+    },
+    {
+      "name": "Digital art",
+      "summary": "I used to draw stuff in my spare time. This is how I originally came to the Web - as a designer.",
+      "keywords": [
+        "drawing",
+        "Photoshop",
+        "illustration",
+        "design"
+      ]
+    },
+    {
+      "name": "Water drinking",
+      "summary": "I love drinks of a different kind. I enjoy good coffee on my lunch breaks but water is my №1 liquid source.",
+      "keywords": [
+        "health",
+        "water"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "proficient"
+    },
+    {
+      "language": "Russian",
+      "level": "native"
+    }
+  ]
+}

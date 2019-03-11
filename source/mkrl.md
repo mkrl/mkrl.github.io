@@ -21,6 +21,18 @@ git submodule update --remote --merge
 grunt
 ```
 
+Build resume:
+
+Make be sure to have [HackMyResume](https://github.com/hacksalot/HackMyResume) installed: `npm install hackmyresume -g` 
+
+For optional PDF support, install [wkhtmltopd](https://wkhtmltopdf.org/).
+
+```
+cd resume
+hackmyresume build mkrl.json TO resume.all -t positive
+
+```
+
 Check out the gruntfile for build steps details.
 
 A total amount of traffic required to download and view this site is: <<size>>, including all the code, design, graphics and a JavaScript library.

@@ -1,0 +1,138 @@
+{
+  "basics": {
+    "en_name": "Mikhail Korolev",
+    "ru_name": "Михаил Королёв",
+    "en_label": "Front-end developer",
+    "ru_label": "Front-end разработчик",
+    "en_summary": "Front-end developer with a passion to Rails",
+    "ru_summary": "Front-end разработчик со страстью к Rails.",
+    "website": "https://mkrl.xyz",
+    "phone": "+7 964 100 98 03",
+    "email": "self@mkrl.xyz",
+    "picture": "",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "mkrl",
+        "url": "https://github.com/mkrl"
+      }
+    ]
+  },
+  "work": [
+    {
+      "en_company": "Irkutsk State University",
+      "ru_company": "Иркутский Государственный Университет",
+      "website": "https://isu.ru",
+      "en_position": "Web developer",
+      "ru_position": "Web разработчик",
+      "startDate": "2014.10",
+      "en_summary": "Maintaining a high variety of educational web services. Developing design prototypes from Scratch into HTML/CSS. Supporting legacy code on a regular basis. Basic SQL: Postgresql, MySQL.",
+      "ru_summary": "Поддержка и разработка образовательных сервисов. Вёрстка / разработка дизайна из Scratch. Поддержка большого количества легаси-кода. Работа с БД: Postgresql, MySQL.",
+      "en_highlights": [
+        "Ported a handful of legacy Open CMS websites to the modern stack.",
+        "Developed several purely front-end applications working with the remote CRM API (1C).",
+        "Successfully pushed Ruby on Rails into our team stack for the sake of easing the process of developing small applications."
+      ],
+      "ru_highlights": [
+        "Портировал множество легаси сайтов и приложений с Open CMS на современный стак.",
+        "Разработал несколько браузерных приложений, работающих с 1С и другими эндпоинтами.",
+        "Успешно продвинул Ruby on Rails в качестве фреймворка для разработки небольших приложений внутри своей команды."
+      ]
+    },
+    {
+      "en_company": "Self-employed",
+      "ru_company": "Самозанятость",
+      "en_position": "Freelance web-development and design",
+      "ru_position": "Фриланс веб-разработка и дизайн",
+      "startDate": "2013",
+      "endDate": "2014-10",
+      "en_summary": "Landing pages, plain simple CMS-based websites for small companies, web design, prototyping. PHP.",
+      "ru_summary": "Лэндинги, простейшие сайты на основе CMS, веб-дизайн. PHP."
+    }
+  ],
+  "skills": [
+    {
+      "en_name": "Web Development",
+      "ru_name": "Web разработка",
+      "level": "intermediate",
+      "keywords": [
+        "HTML",
+        "BEM",
+        "CSS/Sass",
+        "JavaScript/ES6",
+        "TypeScript",
+        "Vue"
+      ]
+    },
+    {
+      "en_name": "General tools",
+      "ru_name": "Основные инструменты",
+      "level": "advanced",
+      "keywords": [
+        "Git",
+        "Linux",
+        "Grunt",
+        "Webpack",
+        "Basic Linux administration"
+      ]
+    },
+    {
+      "en_name": "Back-end and utility",
+      "ru_name": "Back-end и прочие языки",
+      "level": "beginner",
+      "keywords": [
+        "Ruby",
+        "Ruby on Rails",
+        "rspec",
+        "CI/CD",
+        "Postgresql",
+        "Python"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "GitHub",
+      "en_summary": "I use GitHub on a daily basis. Starting from my todo list and monitoring OSS I'm interested in to contributing, working and sharing projects of my own.",
+      "ru_summary": "Я использую GitHub каждый день. Список дел, мониторинг интересующих меня репозиториев, вклады в OSS и собственные проекты - всё это невероятно интересно и удобно",
+      "keywords": [
+        "GitHub",
+        "git",
+        "GitHub Flow",
+        "GitHub API"
+      ]
+    },
+    {
+      "en_name": "Digital art",
+      "ru_name": "Цифровая иллюстрация",
+      "en_summary": "I used to draw stuff in my spare time. This is how I originally came to the Web - as a designer.",
+      "ru_summary": "В свободное время я немного рисую. Именно так я в первый раз пришёл в веб - в качестве дизайнера.",
+      "keywords": [
+        "drawing",
+        "Photoshop",
+        "illustration",
+        "design"
+      ]
+    },
+    {
+      "en_name": "Water drinking",
+      "ru_name": "Вода",
+      "en_summary": "I love drinks of a different kind. I enjoy good coffee on my lunch breaks but water is my №1 liquid source.",
+      "ru_summary": "Как и все люди, я люблю пить (жить без этого не могу). В обеденный перерыв я не прочь выпить чашечку хорошего кофе, но вода всегда лидирует в моём списке любимых жидкостей.",
+      "keywords": [
+        "health",
+        "water"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "proficient"
+    },
+    {
+      "language": "Russian",
+      "level": "native"
+    }
+  ]
+}
