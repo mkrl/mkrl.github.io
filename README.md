@@ -13,14 +13,28 @@ Can you build a responsive website that is modern, does look good, and works rig
 
 Modify source @ `/source/mkrl.[file_extention]`
 
-Build with:
+#### Build
 
 ```
 npm install
-git submodule update --remote --merge
+git submodule update --recursive --remote
 grunt
 ```
 
 Check out the gruntfile for build steps details.
 
-A total amount of traffic required to download and view this site is: 28.4 kB (11.8 kB gzipped), including all the code, design, graphics and a JavaScript library.
+#### Build resume 
+
+Make be sure to have [HackMyResume](https://github.com/hacksalot/HackMyResume) installed: `npm install hackmyresume -g` 
+
+For optional PDF support, install [wkhtmltopd](https://wkhtmltopdf.org/).
+
+Modify source @ `/resume/[language]/mkrl.json`, following the [JSON Resume schema](https://jsonresume.org/schema/). 
+
+```
+git submodule update --recursive --remote
+grunt resume
+
+```
+
+A total amount of traffic required to download and view this site is: 28.7 kB (11.9 kB gzipped), including all the code, design, graphics and a JavaScript library.

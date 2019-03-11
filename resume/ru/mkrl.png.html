@@ -3,8 +3,8 @@
     
     <head>
         <meta charset="utf-8">
-        <title>Mikhail Korolev</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
+        <title>Михаил Королёв</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300'
         rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <style>
@@ -75,11 +75,12 @@
             td:first-child {
               letter-spacing: 2px;
               color: #bd5b5b;
-              font-size: 20px;
+              font-size: 1.35rem;
+              text-align: left;
             }
             
             td:last-child {
-              text-align: justify; /* HTML justification sucks, but in this case... */
+              text-align: right; /* HTML justification sucks, but in this case... */
             }
             
             hr {
@@ -90,6 +91,7 @@
               padding: 15px;
               max-width: 800px;
               margin: 0 auto;
+              margin-bottom: 100px;
             }
             
             section {
@@ -148,6 +150,10 @@
               color: #717171;
               font-weight: 600;
               margin-top: 3px;
+            }
+            
+            .light-bubble {
+            
             }
             
             span.keywords {
@@ -222,43 +228,69 @@
               letter-spacing: 2px;
               text-transform: uppercase;
             }
+            
+            #writing span.tenure {
+              display: none;
+            }
         </style>
     </head>
     
     <body>
         <main>
             <header>
-                 <h1>Mikhail <span style="color: #C00000;">Korolev</span></h1> <span class="label">Front-end developer</span>
+                 <h1>Михаил <span style="color: #C00000;">Королёв</span></h1> <span class="label">Front-end разработчик</span>
                 <p id="contact"> <span class="email"><a href="mailto:self@mkrl.xyz">self@mkrl.xyz</a></span>
                     <span
                     class="phone">+7 964 100 98 03</span> <span class="website"><a href="https://mkrl.xyz"><a href="https://mkrl.xyz">https://mkrl.xyz</a></a></span>
                 </p>
             </header>
-            <section id="summary">Front-end developer with a passion to Rails</section>
+            <section id="summary">Front-end разработчик со страстью к JavaScript, Rails и интересным задачам.
+                <br>@mkrl на <a href='https://github.com/mkrl' target='_blank'>Github</a>
+            </section>
             <hr>
             <section id="skills">
                 <header> <span class="fa fa-lg fa-code"></span> 
-                     <h2>skills</h2>
+                     <h2>навыки</h2>
 
                 </header>
                 <table>
                     <thead>
                         <tr>
-                            <th>Skill</th>
-                            <th>Keywords</th>
+                            <th>Навык</th>
+                            <th>Ключевые слова</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="width: 25%;">Web Development</td>
+                            <td style="width: 25%;">Web разработка</td>
                             <td class="keywords">HTML BEM CSS/Sass JavaScript/ES6 TypeScript Vue</td>
                         </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
                         <tr>
-                            <td style="width: 25%;">General tools</td>
-                            <td class="keywords">Git Linux Grunt Webpack Basic Linux administration</td>
+                            <th>Навык</th>
+                            <th>Ключевые слова</th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
-                            <td style="width: 25%;">Back-end and utility</td>
+                            <td style="width: 25%;">Основные инструменты</td>
+                            <td class="keywords">Git Linux Grunt Webpack Базовое администрирование Linux</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Навык</th>
+                            <th>Ключевые слова</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 25%;">Back-end и прочие языки</td>
                             <td class="keywords">Ruby Ruby on Rails rspec CI/CD Postgresql Python</td>
                         </tr>
                     </tbody>
@@ -267,37 +299,102 @@
             <hr>
             <section id="employment">
                 <header> <span class="fa fa-lg fa-building"></span> 
-                     <h2>employment</h2>
+                     <h2>ОПЫТ РАБОТЫ</h2>
 
                 </header>
                 <div>
-                     <h3><em>Web developer</em>,
+                     <h3><em>Web разработчик</em>,
 
-              <a href="https://isu.ru">Irkutsk State University</a>
+              <a href="https://isu.ru">Иркутский Государственный Университет</a>
 
               </h3> <span class="tenure">2014-10 — Present</span>
                     <p>
-                        <p>Maintaining a high variety of educational web services. Developing design
-                            prototypes from Scratch into HTML/CSS. Supporting legacy code on a regular
-                            basis. Basic SQL: Postgresql, MySQL</p>
+                        <p>Поддержка и разработка образовательных сервисов. Вёрстка / разработка
+                            дизайна из Scratch. Поддержка большого количества легаси-кода. Работа с
+                            БД: Postgresql, MySQL.</p>
                     </p>
                     <ul>
-                        <li>Ported a handful of legacy Open CMS websites to the modern stack.</li>
-                        <li>Developed several purely front-end applications working with the remote
-                            CRM API (1C).</li>
-                        <li>Successfully pushed Ruby on Rails into our team stack for the sake of
-                            easing the process of developing small applications.</li>
+                        <li>Портировал множество легаси сайтов и приложений с Open CMS на современный
+                            стак.</li>
+                        <li>Разработал несколько браузерных приложений, работающих с 1С и другими
+                            эндпоинтами.</li>
+                        <li>Успешно продвинул Ruby on Rails в качестве фреймворка для разработки небольших
+                            приложений внутри своей команды.</li>
                     </ul>
                 </div>
                 <div>
-                     <h3><em>Freelance web-development and design</em>,
+                     <h3><em>Фриланс веб-разработка и дизайн</em>,
 
-              Self-employed
+              Самозанятость
 
               </h3> <span class="tenure">2013-01 — 2014-10</span>
                     <p>
-                        <p>Landing pages, plain simple CMS-based websites for small companies, web
-                            design, prototyping. PHP.</p>
+                        <p>Лэндинги, простейшие сайты на основе CMS, веб-дизайн. PHP.</p>
+                    </p>
+                </div>
+            </section>
+            <hr>
+            <section id="writing">
+                <header> <span class="fa fa-lg fa-pencil"></span> 
+                     <h2>ПУБЛИКАЦИИ</h2>
+
+                </header>
+                <div>
+                     <h3><em><a href="https://dev.to/mkrl">Блог</a></em>,
+      
+            dev.to/mkrl</h3>
+ <span class="tenure">Current</span>
+
+                    <p>Немного пишу, в основном про JavaScript.</p>
+                </div>
+            </section>
+            <hr>
+            <section id="languages">
+                <header> <span class="fa fa-lg fa-bullhorn"></span> 
+                     <h2>ЯЗЫКИ</h2>
+
+                </header>
+                <div>
+                     <h3>Английский</h3>
+
+                    <p>Свободно говорю</p>
+                </div>
+                <div>
+                     <h3>Русский</h3>
+
+                    <p>Родной язык</p>
+                </div>
+            </section>
+            <hr>
+            <section id="interests">
+                <header> <span class="fa fa-lg fa-paint-brush"></span> 
+                     <h2>ИНТЕРЕСЫ</h2>
+
+                </header>
+                <div>
+                     <h3>GitHub</h3>
+
+                    <p>
+                        <p>Я использую GitHub каждый день. Список дел, мониторинг интересующих меня
+                            репозиториев, вклады в OSS и собственные проекты - всё это невероятно интересно
+                            и удобно</p>
+                    </p>
+                </div>
+                <div>
+                     <h3>Цифровая иллюстрация</h3>
+
+                    <p>
+                        <p>В свободное время я немного рисую. Именно так я в первый раз пришёл в
+                            веб - в качестве дизайнера.</p>
+                    </p>
+                </div>
+                <div>
+                     <h3>Вода</h3>
+
+                    <p>
+                        <p>Как и все люди, я люблю пить (жить без этого не могу). В обеденный перерыв
+                            я не прочь выпить чашечку хорошего кофе, но вода всегда лидирует в моём
+                            списке любимых жидкостей.</p>
                     </p>
                 </div>
             </section>

@@ -5,13 +5,17 @@
     "phone": "+7 964 100 98 03",
     "website": "https://mkrl.xyz",
     "name": "Mikhail Korolev",
-    "summary": "Front-end developer with a passion to Rails",
+    "summary": "Front-end developer with a passion to JavaScript, Rails and interesting challenges.<br>@mkrl on <a href='https://github.com/mkrl' target='_blank'>Github</a>",
     "picture": "",
     "profiles": [
       {
         "network": "GitHub",
         "username": "mkrl",
         "url": "https://github.com/mkrl"
+      },
+      {
+        "network": "Stack Overflow",
+        "url": "https://stackoverflow.com/users/7753036/mkrl"
       }
     ]
   },
@@ -20,8 +24,8 @@
       "company": "Irkutsk State University",
       "website": "https://isu.ru",
       "position": "Web developer",
-      "startDate": "2014.10",
-      "summary": "Maintaining a high variety of educational web services. Developing design prototypes from Scratch into HTML/CSS. Supporting legacy code on a regular basis. Basic SQL: Postgresql, MySQL",
+      "startDate": "2014-10",
+      "summary": "Maintaining a high variety of educational web services. Developing design prototypes from Scratch into HTML/CSS. Supporting legacy code on a regular basis. Basic SQL: Postgresql, MySQL.",
       "highlights": [
         "Ported a handful of legacy Open CMS websites to the modern stack.",
         "Developed several purely front-end applications working with the remote CRM API (1C).",
@@ -73,10 +77,18 @@
       ]
     }
   ],
+  "publications": [
+    {
+      "name": "Small personal blog",
+      "publisher": "dev.to/mkrl",
+      "website": "https://dev.to/mkrl",
+      "summary": "I'm writing some of my thoughts down, mostly JS related."
+    }
+  ],
   "interests": [
     {
       "name": "GitHub",
-      "summary": "I use GitHub on a daily basis. Starting from my todo list and monitoring OSS I'm interested in to contributing, working and sharing projects of my own.",
+      "summary": "I use GitHub on a daily basis. Starting from my todo list and monitoring OSS I'm interested in, to contributing, working and sharing projects of my own.",
       "keywords": [
         "GitHub",
         "git",
@@ -106,11 +118,11 @@
   "languages": [
     {
       "language": "English",
-      "level": "proficient"
+      "level": "Proficient"
     },
     {
       "language": "Russian",
-      "level": "native"
+      "level": "Native"
     }
   ]
 }

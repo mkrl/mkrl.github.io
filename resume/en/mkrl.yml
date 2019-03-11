@@ -2,22 +2,22 @@ name: 'Mikhail Korolev'
 info:
   label: 'Front-end developer'
   image: ""
-  brief: 'Front-end developer with a passion to Rails'
+  brief: 'Front-end developer with a passion to JavaScript, Rails and interesting challenges.<br>@mkrl on <a href=''https://github.com/mkrl'' target=''_blank''>Github</a>'
 contact:
   email: self@mkrl.xyz
   phone: '+7 964 100 98 03'
   website: 'https://mkrl.xyz'
 meta:
   format: FRESH@^1.0.0-beta
-  modified: '2019-03-11T03:57:36.694Z'
+  modified: '2019-03-11T15:26:32.242Z'
 employment:
   history:
     -
       position: 'Web developer'
       employer: 'Irkutsk State University'
-      summary: 'Maintaining a high variety of educational web services. Developing design prototypes from Scratch into HTML/CSS. Supporting legacy code on a regular basis. Basic SQL: Postgresql, MySQL'
+      summary: 'Maintaining a high variety of educational web services. Developing design prototypes from Scratch into HTML/CSS. Supporting legacy code on a regular basis. Basic SQL: Postgresql, MySQL.'
       current: true
-      start: '2014.10'
+      start: 2014-10
       url: 'https://isu.ru'
       keywords: []
       highlights:
@@ -62,16 +62,26 @@ skills:
         - CI/CD
         - Postgresql
         - Python
+writing:
+  -
+    title: 'Small personal blog'
+    publisher: dev.to/mkrl
+    url: 'https://dev.to/mkrl'
+    summary: 'I''m writing some of my thoughts down, mostly JS related.'
 social:
   -
     label: GitHub
     network: GitHub
     url: 'https://github.com/mkrl'
     user: mkrl
+  -
+    label: 'Stack Overflow'
+    network: 'Stack Overflow'
+    url: 'https://stackoverflow.com/users/7753036/mkrl'
 interests:
   -
     name: GitHub
-    summary: 'I use GitHub on a daily basis. Starting from my todo list and monitoring OSS I''m interested in to contributing, working and sharing projects of my own.'
+    summary: 'I use GitHub on a daily basis. Starting from my todo list and monitoring OSS I''m interested in, to contributing, working and sharing projects of my own.'
     keywords:
       - GitHub
       - git
@@ -94,7 +104,7 @@ interests:
 languages:
   -
     language: English
-    level: proficient
+    level: Proficient
   -
     language: Russian
-    level: native
+    level: Native

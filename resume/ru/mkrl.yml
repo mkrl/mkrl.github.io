@@ -1,0 +1,106 @@
+name: 'Михаил Королёв'
+info:
+  label: 'Front-end разработчик'
+  image: ""
+  brief: 'Front-end разработчик со страстью к JavaScript, Rails и интересным задачам.<br>@mkrl на <a href=''https://github.com/mkrl'' target=''_blank''>Github</a>'
+contact:
+  email: self@mkrl.xyz
+  phone: '+7 964 100 98 03'
+  website: 'https://mkrl.xyz'
+meta:
+  format: FRESH@^1.0.0-beta
+  modified: '2019-03-11T15:26:34.186Z'
+employment:
+  history:
+    -
+      position: 'Web разработчик'
+      employer: 'Иркутский Государственный Университет'
+      summary: 'Поддержка и разработка образовательных сервисов. Вёрстка / разработка дизайна из Scratch. Поддержка большого количества легаси-кода. Работа с БД: Postgresql, MySQL.'
+      current: true
+      start: 2014-10
+      url: 'https://isu.ru'
+      keywords: []
+      highlights:
+        - 'Портировал множество легаси сайтов и приложений с Open CMS на современный стак.'
+        - 'Разработал несколько браузерных приложений, работающих с 1С и другими эндпоинтами.'
+        - 'Успешно продвинул Ruby on Rails в качестве фреймворка для разработки небольших приложений внутри своей команды.'
+    -
+      position: 'Фриланс веб-разработка и дизайн'
+      employer: Самозанятость
+      summary: 'Лэндинги, простейшие сайты на основе CMS, веб-дизайн. PHP.'
+      start: '2013'
+      end: 2014-10
+      keywords: []
+skills:
+  sets:
+    -
+      name: 'Web разработка'
+      level: intermediate
+      skills:
+        - HTML
+        - BEM
+        - CSS/Sass
+        - JavaScript/ES6
+        - TypeScript
+        - Vue
+    -
+      name: 'Основные инструменты'
+      level: advanced
+      skills:
+        - Git
+        - Linux
+        - Grunt
+        - Webpack
+        - 'Базовое администрирование Linux'
+    -
+      name: 'Back-end и прочие языки'
+      level: beginner
+      skills:
+        - Ruby
+        - 'Ruby on Rails'
+        - rspec
+        - CI/CD
+        - Postgresql
+        - Python
+writing:
+  -
+    title: Блог
+    publisher: dev.to/mkrl
+    url: 'https://dev.to/mkrl'
+    summary: 'Немного пишу, в основном про JavaScript.'
+social:
+  -
+    label: GitHub
+    network: GitHub
+    url: 'https://github.com/mkrl'
+    user: mkrl
+interests:
+  -
+    name: GitHub
+    summary: 'Я использую GitHub каждый день. Список дел, мониторинг интересующих меня репозиториев, вклады в OSS и собственные проекты - всё это невероятно интересно и удобно'
+    keywords:
+      - GitHub
+      - git
+      - 'GitHub Flow'
+      - 'GitHub API'
+  -
+    name: 'Цифровая иллюстрация'
+    summary: 'В свободное время я немного рисую. Именно так я в первый раз пришёл в веб - в качестве дизайнера.'
+    keywords:
+      - drawing
+      - Photoshop
+      - illustration
+      - design
+  -
+    name: Вода
+    summary: 'Как и все люди, я люблю пить (жить без этого не могу). В обеденный перерыв я не прочь выпить чашечку хорошего кофе, но вода всегда лидирует в моём списке любимых жидкостей.'
+    keywords:
+      - health
+      - water
+languages:
+  -
+    language: Английский
+    level: 'Свободно говорю'
+  -
+    language: Русский
+    level: 'Родной язык'

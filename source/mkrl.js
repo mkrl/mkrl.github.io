@@ -14,7 +14,7 @@ var settings = {
         about: {
             name: "about",
             description: "about me and this place",
-            func: function(){plainterm.type('Hi. I\'m Michael. I\'m a Web Developer. This is my home page. By default you won\'t be greeted with a logotype, fancy design and a catchy title. If you need something, you can directly ask for the information you need. Just like some of us are used to.',16);}
+            func: function(){plainterm.type('Hi. I\'m Mikhail. I\'m a Web Developer. This is my home page. By default you won\'t be greeted with a logotype, fancy design and a catchy title. If you need something, you can directly ask for the information you need, the good ol CLI way. This entire website is under 30 kb (under 15 gzipped). Whoa!',16);}
         },
         startx: {
             name: "startx",
@@ -34,17 +34,12 @@ var settings = {
         dotfiles: {
             name: "dotfiles",
             description: "for the sake of not setting stuff up every time",
-            func: function(){plainterm.print('<a href="https://github.com/mkrl/.dotfiles" target="blank">Click</a>');}
-        },
-        roadmap: {
-            name: "roadmap",
-            description: "rough skills roadmap",
-            func: function(){plainterm.print('Working on it(tm)');}
+            func: function(){plainterm.print('<a href="https://github.com/mkrl/ubuntu-post-install" target="blank">Click</a>');}
         },
         resume: {
             name: "resume",
             description: "download my resume",
-            func: function(){plainterm.print('Working on it(tm)');}
+            func: function(){plainterm.print('English: <a href="./resume/en/mkrl.html" target="blank">HTML</a>, <a href="./resume/en/mkrl.pdf" target="blank">PDF</a>, <a href="https://github.com/mkrl/mkrl.github.io/tree/master/resume/en" target="blank">other formats</a><br>Русский: <a href="./resume/ru/mkrl.html" target="blank">HTML</a>, <a href="./resume/ru/mkrl.pdf" target="blank">PDF</a>, <a href="https://github.com/mkrl/mkrl.github.io/tree/master/resume/ru" target="blank">другие форматы</a>');}
         },
         chuck: {
             name: "chuck",
