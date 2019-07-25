@@ -9,15 +9,26 @@ contact:
   website: 'https://mkrl.xyz'
 meta:
   format: FRESH@^1.0.0-beta
-  modified: '2019-03-11T15:26:32.242Z'
+  modified: '2019-07-25T02:50:17.435Z'
 employment:
   history:
+    -
+      position: 'Front-end developer'
+      employer: IRMAG.RU
+      summary: 'Developing internal service applications (React, Flux). Maintaining and developing existing stack (Vanilla JS, Webpack, Symfony Encore).'
+      current: true
+      start: 2019-04
+      url: 'https://irmag.ru'
+      keywords: []
+      highlights:
+        - 'Developed logistics-related applications (React, Flux, Styled-components).'
+        - 'Supported and developed existing front-end stack (Webpack / Symfony encore, Vanilla JS, jQuery, SASS).'
     -
       position: 'Web developer'
       employer: 'Irkutsk State University'
       summary: 'Maintaining a high variety of educational web services. Developing design prototypes from Scratch into HTML/CSS. Supporting legacy code on a regular basis. Basic SQL: Postgresql, MySQL.'
-      current: true
       start: 2014-10
+      end: 2019-04
       url: 'https://isu.ru'
       keywords: []
       highlights:
@@ -42,7 +53,8 @@ skills:
         - CSS/Sass
         - JavaScript/ES6
         - TypeScript
-        - Vue
+        - React
+        - Redux
     -
       name: 'General tools'
       level: advanced
@@ -67,7 +79,7 @@ writing:
     title: 'Small personal blog'
     publisher: dev.to/mkrl
     url: 'https://dev.to/mkrl'
-    summary: 'I''m writing some of my thoughts down, mostly JS related.'
+    summary: 'I do write some of my thoughts down, mostly JS related.'
 social:
   -
     label: GitHub

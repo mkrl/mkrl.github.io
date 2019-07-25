@@ -9,15 +9,26 @@ contact:
   website: 'https://mkrl.xyz'
 meta:
   format: FRESH@^1.0.0-beta
-  modified: '2019-03-11T15:26:34.186Z'
+  modified: '2019-07-25T02:50:18.972Z'
 employment:
   history:
+    -
+      position: 'Front-end разработчик'
+      employer: IRMAG.RU
+      summary: 'Разработка внутренних сервисов компании (React, Flux). Поддержка и обновление существующей структуры (Vanilla JS, Webpack, Symfony Encore).'
+      current: true
+      start: 2019-04
+      url: 'https://irmag.ru'
+      keywords: []
+      highlights:
+        - 'Разработка и поддержка логистических приложений для внутрикорпоративного использования (React, Flux, Styled-components).'
+        - 'Поддержка существующего фронт-енд стека (Webpack / Symfony encore, Vanilla JS, jQuery, SASS).'
     -
       position: 'Web разработчик'
       employer: 'Иркутский Государственный Университет'
       summary: 'Поддержка и разработка образовательных сервисов. Вёрстка / разработка дизайна из Scratch. Поддержка большого количества легаси-кода. Работа с БД: Postgresql, MySQL.'
-      current: true
       start: 2014-10
+      end: 2019-04
       url: 'https://isu.ru'
       keywords: []
       highlights:
@@ -41,8 +52,8 @@ skills:
         - BEM
         - CSS/Sass
         - JavaScript/ES6
-        - TypeScript
-        - Vue
+        - React
+        - Redux
     -
       name: 'Основные инструменты'
       level: advanced

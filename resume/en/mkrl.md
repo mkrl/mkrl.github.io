@@ -8,13 +8,19 @@ Front-end developer with a passion to JavaScript, Rails and interesting challeng
 
 ## SKILLS
 
-  - Web Development: HTML BEM CSS/Sass JavaScript/ES6 TypeScript Vue 
+  - Web Development: HTML BEM CSS/Sass JavaScript/ES6 TypeScript React Redux 
   - General tools: Git Linux Grunt Webpack Basic Linux administration 
   - Back-end and utility: Ruby Ruby on Rails rspec CI/CD Postgresql Python 
 
 ## EMPLOYMENT
 
-### *Web developer*, [Irkutsk State University](https://isu.ru) (2014-10 — Present)
+### *Front-end developer*, [IRMAG.RU](https://irmag.ru) (2019-04 — Present)
+
+Developing internal service applications (React, Flux). Maintaining and developing existing stack (Vanilla JS, Webpack, Symfony Encore).
+  - Developed logistics-related applications (React, Flux, Styled-components).
+  - Supported and developed existing front-end stack (Webpack / Symfony encore, Vanilla JS, jQuery, SASS).
+
+### *Web developer*, [Irkutsk State University](https://isu.ru) (2014-10 — 2019-04)
 
 Maintaining a high variety of educational web services. Developing design prototypes from Scratch into HTML/CSS. Supporting legacy code on a regular basis. Basic SQL: Postgresql, MySQL.
   - Ported a handful of legacy Open CMS websites to the modern stack.
@@ -34,7 +40,7 @@ Landing pages, plain simple CMS-based websites for small companies, web design, 
 ## WRITING
 
 ### ***[Small personal blog](https://dev.to/mkrl)*** (dev.to/mkrl, Current)
-I'm writing some of my thoughts down, mostly JS related.
+I do write some of my thoughts down, mostly JS related.
 
 
 

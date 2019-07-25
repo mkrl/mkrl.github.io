@@ -17,10 +17,22 @@
   },
   "work": [
     {
+      "company": "IRMAG.RU",
+      "website": "https://irmag.ru",
+      "position": "Front-end разработчик",
+      "startDate": "2019-04",
+      "summary": "Разработка внутренних сервисов компании (React, Flux). Поддержка и обновление существующей структуры (Vanilla JS, Webpack, Symfony Encore).",
+      "highlights": [
+        "Разработка и поддержка логистических приложений для внутрикорпоративного использования (React, Flux, Styled-components).",
+        "Поддержка существующего фронт-енд стека (Webpack / Symfony encore, Vanilla JS, jQuery, SASS)."
+      ]
+    },
+    {
       "company": "Иркутский Государственный Университет",
       "website": "https://isu.ru",
       "position": "Web разработчик",
       "startDate": "2014-10",
+      "endDate": "2019-04",
       "summary": "Поддержка и разработка образовательных сервисов. Вёрстка / разработка дизайна из Scratch. Поддержка большого количества легаси-кода. Работа с БД: Postgresql, MySQL.",
       "highlights": [
         "Портировал множество легаси сайтов и приложений с Open CMS на современный стак.",
@@ -45,8 +57,8 @@
         "BEM",
         "CSS/Sass",
         "JavaScript/ES6",
-        "TypeScript",
-        "Vue"
+        "React",
+        "Redux"
       ]
     },
     {
