@@ -16,10 +16,12 @@ Modify source @ `/source/mkrl.[file_extention]`
 #### Build
 
 ```
-npm install
-git submodule update --recursive --remote
+npm i
+git submodule update --init --recursive
 grunt
 ```
+
+(use `git submodule update --recursive --remote` if not running for the first time)
 
 Check out the gruntfile for build steps details.
 
