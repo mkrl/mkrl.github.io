@@ -14,7 +14,7 @@ var settings = {
         about: {
             name: "about",
             description: "about me and this place",
-            func: function(){plainterm.type('Hi. I\'m Mikhail. I\'m a Web Developer. This is my home page. By default you won\'t be greeted with a logotype, fancy design and a catchy title. If you need something, you can directly ask for the information you need, the good ol CLI way. This entire website is under 30 kb (under 15 gzipped). Whoa!',16);}
+            func: function(){plainterm.type('Hi. I\'m Mikhail. I\'m a front-end engineer. This is my home page. By default you won\'t be greeted with a logotype, fancy design or a catchy title. If you need something, you can directly ask for the information you need, the good ol CLI way. This entire website is under 30 kb (under 15 gzipped). Whoa!',16);}
         },
         startx: {
             name: "startx",

@@ -39,4 +39,4 @@ grunt resume
 
 ```
 
-A total amount of traffic required to download and view this site is: 28.7 kB (11.9 kB gzipped), including all the code, design, graphics and a JavaScript library.
+A total amount of traffic required to download and view this site is: 28.8 kB (11.9 kB gzipped), including all the code, design, graphics and a JavaScript library.
