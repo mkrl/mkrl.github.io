@@ -530,7 +530,7 @@
         <w:pPr>
           <w:pStyle w:val="Summary"/>
         </w:pPr>
-        <w:r><w:rPr></w:rPr><w:t>Front-end разработчик со страстью к JavaScript, Rails и интересным задачам.&amp;lt;br&amp;gt;@mkrl на &amp;lt;a href=&amp;apos;</w:t></w:r><w:hlink w:dest="https://github.com/mkrl&apos"><w:r><w:rPr><w:rStyle w:val="Hyperlink"/></w:rPr><w:t>https://github.com/mkrl&amp;apos</w:t></w:r></w:hlink><w:r><w:rPr></w:rPr><w:t>; target=&amp;apos;_blank&amp;apos;&amp;gt;Github&amp;lt;/a&amp;gt;</w:t></w:r>
+        <w:r><w:rPr></w:rPr><w:t>Современный JavaScript, React, client-side performance, и прочие вкусности. A/B тестирование, работа с продуктом и разработка гипотез - это я тоже люблю.&amp;lt;br&amp;gt;@mkrl на &amp;lt;a href=&amp;apos;</w:t></w:r><w:hlink w:dest="https://github.com/mkrl&apos"><w:r><w:rPr><w:rStyle w:val="Hyperlink"/></w:rPr><w:t>https://github.com/mkrl&amp;apos</w:t></w:r></w:hlink><w:r><w:rPr></w:rPr><w:t>; target=&amp;apos;_blank&amp;apos;&amp;gt;Github&amp;lt;/a&amp;gt;</w:t></w:r>
       </w:p>
       <wx:sub-section>
   <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -582,7 +582,7 @@
               <w:caps/>
               <w:spacing w:val="22"/>
             </w:rPr>
-            <w:t>HTML  BEM  CSS/Sass  JavaScript/ES6  React  Redux</w:t>
+            <w:t>HTML  BEM  CSS/Sass  JavaScript/ES6  React  Redux  Ruby  Ruby on Rails</w:t>
           </w:r>
         </w:p>
       </w:tc>
@@ -641,7 +641,7 @@
               <w:caps/>
               <w:color w:val="989898"/>
             </w:rPr>
-            <w:t>Back-end и прочие языки</w:t>
+            <w:t>Скриптовые языки и прочее</w:t>
           </w:r>
         </w:p>
       </w:tc>
@@ -656,7 +656,7 @@
               <w:caps/>
               <w:spacing w:val="22"/>
             </w:rPr>
-            <w:t>Ruby  Ruby on Rails  rspec  CI/CD  Postgresql  Python</w:t>
+            <w:t>Bash  rspec  CI/CD  Postgresql  Python</w:t>
           </w:r>
         </w:p>
       </w:tc>
@@ -704,6 +704,123 @@
       <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
         <w:t>Front-end разработчик, </w:t>
       </w:r>
+      <w:hlink w:dest="https://www.ultimate-guitar.com/">
+        <w:r wsp:rsidR="009452CA" wsp:rsidRPr="00606071">
+          <w:rPr>
+            <w:rStyle w:val="Hyperlink"/>
+          </w:rPr>
+          <w:t>Ultimate Guitar (WSM Group)</w:t>
+        </w:r>
+      </w:hlink>
+      <w:r wsp:rsidR="00EA0B64">
+        <w:tab/>
+      </w:r>
+      <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
+        <w:rPr>
+          <w:rStyle w:val="FromTo"/>
+        </w:rPr>
+        <w:t>Sep 2019 — Present</w:t>
+      </w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Работаю над монетизацией самого большого каталога нот и сообщества для музыкантов (musescore.com).</w:t></w:r>
+    </w:p>
+
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Перевёл десятки сервисов и частей приложения на React / Redux.</w:t></w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Работал в невероятно быстром Scrum-like enviroment, с ежедневной доставкой кода в продакшен</w:t></w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Работал с платёжными сервисами: Stripe / Stripe Elements, Apple и Google Pay.</w:t></w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Вместе с командой за 8 месяцев удвоили выручку продукта через постоянную череду A/B экспериментов и глубокий анализ.</w:t></w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Написал шаблонизатор email рассылок для внутреннего пользования.</w:t></w:r>
+    </w:p>
+
+  </wx:sub-section>
+
+
+  <wx:sub-section>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00606071" wsp:rsidP="00E578D4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:tabs>
+          <w:tab w:val="right" w:pos="9360"/>
+        </w:tabs>
+      </w:pPr>
+      <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
+        <w:t>Front-end разработчик, </w:t>
+      </w:r>
       <w:hlink w:dest="https://irmag.ru">
         <w:r wsp:rsidR="009452CA" wsp:rsidRPr="00606071">
           <w:rPr>
@@ -719,7 +836,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Apr 2019 — Present</w:t>
+        <w:t>Apr 2019 — Sep 2019</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -831,7 +948,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Разработал несколько браузерных приложений, работающих с 1С и другими эндпоинтами.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Разработал несколько браузерных приложений, работающих с 1С и прочими CRM-интеграциями образовательного типа.</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -1038,6 +1155,17 @@
       </w:r>
       <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
         <w:t>drawing, Photoshop, illustration, design</w:t>
+      </w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00606071" wsp:rsidP="00E578D4">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:tabs>
+          <w:tab w:val="right" w:pos="9360"/>
+        </w:tabs>
+      </w:pPr>
+      <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
+        <w:t>Новые технологии</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA" wsp:rsidRDefault="00606071" wsp:rsidP="00E578D4">

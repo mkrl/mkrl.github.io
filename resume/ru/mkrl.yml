@@ -2,22 +2,36 @@ name: 'Михаил Королёв'
 info:
   label: 'Front-end разработчик'
   image: ""
-  brief: 'Front-end разработчик со страстью к JavaScript, Rails и интересным задачам.<br>@mkrl на <a href=''https://github.com/mkrl'' target=''_blank''>Github</a>'
+  brief: 'Современный JavaScript, React, client-side performance, и прочие вкусности. A/B тестирование, работа с продуктом и разработка гипотез - это я тоже люблю.<br>@mkrl на <a href=''https://github.com/mkrl'' target=''_blank''>Github</a>'
 contact:
   email: self@mkrl.xyz
   phone: '+7 964 100 98 03'
   website: 'https://mkrl.xyz'
 meta:
   format: FRESH@^1.0.0-beta
-  modified: '2019-07-25T02:50:18.972Z'
+  modified: '2020-06-23T17:35:41.897Z'
 employment:
   history:
     -
       position: 'Front-end разработчик'
+      employer: 'Ultimate Guitar (WSM Group)'
+      summary: 'Работаю над монетизацией самого большого каталога нот и сообщества для музыкантов (musescore.com).'
+      current: true
+      start: 2019-09
+      url: 'https://www.ultimate-guitar.com/'
+      keywords: []
+      highlights:
+        - 'Перевёл десятки сервисов и частей приложения на React / Redux.'
+        - 'Работал в невероятно быстром Scrum-like enviroment, с ежедневной доставкой кода в продакшен'
+        - 'Работал с платёжными сервисами: Stripe / Stripe Elements, Apple и Google Pay.'
+        - 'Вместе с командой за 8 месяцев удвоили выручку продукта через постоянную череду A/B экспериментов и глубокий анализ.'
+        - 'Написал шаблонизатор email рассылок для внутреннего пользования.'
+    -
+      position: 'Front-end разработчик'
       employer: IRMAG.RU
       summary: 'Разработка внутренних сервисов компании (React, Flux). Поддержка и обновление существующей структуры (Vanilla JS, Webpack, Symfony Encore).'
-      current: true
       start: 2019-04
+      end: 2019-09
       url: 'https://irmag.ru'
       keywords: []
       highlights:
@@ -33,7 +47,7 @@ employment:
       keywords: []
       highlights:
         - 'Портировал множество легаси сайтов и приложений с Open CMS на современный стак.'
-        - 'Разработал несколько браузерных приложений, работающих с 1С и другими эндпоинтами.'
+        - 'Разработал несколько браузерных приложений, работающих с 1С и прочими CRM-интеграциями образовательного типа.'
         - 'Успешно продвинул Ruby on Rails в качестве фреймворка для разработки небольших приложений внутри своей команды.'
     -
       position: 'Фриланс веб-разработка и дизайн'
@@ -54,6 +68,8 @@ skills:
         - JavaScript/ES6
         - React
         - Redux
+        - Ruby
+        - 'Ruby on Rails'
     -
       name: 'Основные инструменты'
       level: advanced
@@ -64,11 +80,10 @@ skills:
         - Webpack
         - 'Базовое администрирование Linux'
     -
-      name: 'Back-end и прочие языки'
+      name: 'Скриптовые языки и прочее'
       level: beginner
       skills:
-        - Ruby
-        - 'Ruby on Rails'
+        - Bash
         - rspec
         - CI/CD
         - Postgresql
@@ -88,7 +103,7 @@ social:
 interests:
   -
     name: GitHub
-    summary: 'Я использую GitHub каждый день. Список дел, мониторинг интересующих меня репозиториев, вклады в OSS и собственные проекты - всё это невероятно интересно и удобно'
+    summary: 'Я использую GitHub каждый день. Список дел, мониторинг интересующих меня репозиториев, вклады в OSS и собственные проекты (когда на них есть время) - всё это невероятно интересно и удобно'
     keywords:
       - GitHub
       - git
@@ -103,8 +118,11 @@ interests:
       - illustration
       - design
   -
+    name: 'Новые технологии'
+    summary: 'Люблю поболтать о том, что нового в вебе. Слежу за стандартами, спеками и всем сопутствующим. Жду и боюсь того момента, когда останется один браузер.'
+  -
     name: Вода
-    summary: 'Как и все люди, я люблю пить (жить без этого не могу). В обеденный перерыв я не прочь выпить чашечку хорошего кофе, но вода всегда лидирует в моём списке любимых жидкостей.'
+    summary: 'Как и все люди, я люблю пить (жить без этого не могу). В обеденный перерыв я не прочь выпить чашечку хорошего кофе, но вода всегда лидирует в моём списке любимых жидкостей. Кстати, про кофе тоже люблю поболтать.'
     keywords:
       - health
       - water
