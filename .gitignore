@@ -66,3 +66,5 @@ typings/
 
 # idea files
 .idea
+
+dist

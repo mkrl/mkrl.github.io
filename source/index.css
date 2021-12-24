@@ -1,0 +1,48 @@
+html, body, .terminal {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: white;
+    background-color: #000;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+body.x {
+    background-color: #18564b;
+    color: #000;
+    transition: background-color 500ms linear;
+}
+
+.terminal {
+    width: 100%;
+    -webkit-transition: width 500ms, height 500ms, -webkit-transform 500ms;
+    transition: width 500ms, height 500ms, transform 500ms;
+}
+
+main.terminal {
+    font-size: 18px;
+    padding: 3rem;
+}
+
+.terminal, .terminal input {
+    text-shadow: 0.125rem 0 0.06rem #ea36af33, -0.125rem 0 0.06rem #75fa6938;
+    letter-spacing: 1px;
+}
+
+.terminal .terminal-type > span {
+    padding-right: 10pt;
+}
+
+@media (max-width: 768px) {
+    main.terminal {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+}
