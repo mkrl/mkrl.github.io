@@ -1,42 +1,17 @@
-## A homepage of mine
+A home page to house things of mine. Perhaps, great ideas or other things?
 
-Today is the era of previously unreachable download speeds, unlimited bandwidth and constantly increasing computing resources.
-With an incredibly large amount of third-party libraries we sometimes tend to forget how to write pure, simple and lightweight code for simple tasks.
+The terminal functionality is covered by [ttty](https://github.com/mkrl/ttty) - pure JS lightweight terminal "emulator".
 
-Can you build a responsive website that is modern, does look good, and works right? The answer is yes, you can at least try to.
-
-### Stuff
-
-[plainterm.js](https://github.com/mkrl/plainterm.js) - pure JS lightweight terminal "emulator".
-
-[node.js](https://nodejs.org/) running [grunt](https://gruntjs.com/) as build tools.
-
-Modify source @ `/source/mkrl.[file_extention]`
+Bundling handled by Vite
 
 #### Build
 
 ```
 npm i
-git submodule update --init --recursive
-grunt
+npm start
 ```
+Modify source @ `/source/`
 
-(use `git submodule update --recursive --remote` if not running for the first time)
+Build with `npm run build` (assembled in /dist, ready to deploy).
 
-Check out the gruntfile for build steps details.
 
-#### Build resume 
-
-Make be sure to have [HackMyResume](https://github.com/hacksalot/HackMyResume) installed: `npm install hackmyresume -g` 
-
-For optional PDF support, install [wkhtmltopd](https://wkhtmltopdf.org/).
-
-Modify source @ `/resume/[language]/mkrl.json`, following the [JSON Resume schema](https://jsonresume.org/schema/). 
-
-```
-git submodule update --recursive --remote
-grunt resume
-
-```
-
-A total amount of traffic required to download and view this site is: 28.8 kB (11.9 kB gzipped), including all the code, design, graphics and a JavaScript library.
