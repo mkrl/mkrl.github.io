@@ -1,0 +1,78 @@
+{
+  "/void": {
+    "name": "void",
+    "type": "dir",
+    "entries": []
+  },
+  "/experiments": {
+    "name": "experiments",
+    "type": "dir",
+    "entries": [
+      {
+        "name": "favicon.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  "/contact/nested/doublenested": {
+    "name": "doublenested",
+    "type": "dir",
+    "entries": [
+      {
+        "name": "file.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  "/contact/nested": {
+    "name": "nested",
+    "type": "dir",
+    "entries": [
+      {
+        "name": "doublenested",
+        "type": "dir",
+        "path": "/contact/nested/doublenested"
+      }
+    ]
+  },
+  "/contact": {
+    "name": "contact",
+    "type": "dir",
+    "entries": [
+      {
+        "name": "email.txt",
+        "type": "txt"
+      },
+      {
+        "name": "nested",
+        "type": "dir",
+        "path": "/contact/nested"
+      }
+    ]
+  },
+  "/": {
+    "name": "fs",
+    "type": "dir",
+    "entries": [
+      {
+        "name": "about.txt",
+        "type": "txt"
+      },
+      {
+        "name": "contact",
+        "type": "dir",
+        "path": "/contact"
+      },
+      {
+        "name": "experiments",
+        "type": "dir",
+        "path": "/experiments"
+      },
+      {
+        "name": "void",
+        "type": "dir",
+        "path": "/void"
+      }
+    ]
+  }
+}

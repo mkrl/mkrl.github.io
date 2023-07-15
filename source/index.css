@@ -14,11 +14,6 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-body.x {
-    background-color: #18564b;
-    color: #000;
-    transition: background-color 500ms linear;
-}
 
 .terminal {
     width: 100%;
