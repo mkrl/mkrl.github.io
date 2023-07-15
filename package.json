@@ -5,7 +5,8 @@
   "main": "source/index.js",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "fs": "node generate.mjs"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "vite": "^2.7.3"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "ttty": "^1.2.0"
   }
 }

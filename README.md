@@ -12,6 +12,9 @@ npm start
 ```
 Modify source @ `/source/`
 
+Files and directories put in `/source/fs/` will appear in the virtual filesystem and available for traversing.
+To regenerate the filesystem, run `npm run fs`.
+
 Build with `npm run build` (assembled in /dist, ready to deploy).
 
 

@@ -1,4 +1,5 @@
 import { initTerminal } from 'ttty'
+import { buildCommands } from './commands'
 
 const terminal = initTerminal({
     host: document.querySelector('#terminal'),
@@ -48,5 +49,7 @@ const terminal = initTerminal({
         },
     }
 })
+
+buildCommands()
 
 terminal.input.focus()
