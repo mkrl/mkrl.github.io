@@ -35,6 +35,14 @@ main.terminal {
     padding-right: 10pt;
 }
 
+.terminal .ls-item {
+    margin-right: 10pt;
+}
+
+.terminal .ls-dir.ls-item {
+    color: var(--terminal-accent-color, #ffff7d);
+}
+
 @media (max-width: 768px) {
     main.terminal {
         font-size: 14px;
