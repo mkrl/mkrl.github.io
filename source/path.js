@@ -35,7 +35,7 @@ export const resolvePath = (path) => {
 const insertSuggestion = (input, matches, wordToReplace) => {
   if (matches.length > 0) {
     const shortestMatch = matches.reduce((a, b) => a.length <= b.length ? a : b)
-    input.value = input.value.replace(wordToReplace, shortestMatch)
+    input.value = input.value.replace(` ${wordToReplace}`, ` ${shortestMatch}`)
   }
 }
 

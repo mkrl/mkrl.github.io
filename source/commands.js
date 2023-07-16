@@ -17,6 +17,21 @@ const formatNotAFolderError = (path) =>
 const formatDirItem = (item) =>
   `<span class="ls-item${item.type === 'dir' ? ' ls-dir' : ''}">${item.name}</span>`
 
+const getFlagsFromArguments = (args) => {
+  const flags = new Set()
+  const restArgs = args.filter(arg => {
+    if (arg.startsWith('-')) {
+      arg
+        .replace('-', '')
+        .split('')
+        .forEach(flag => flags.add(flag))
+      return false
+    }
+    return true
+  })
+  return [restArgs, Array.from(flags)]
+}
+
 export const cd = ({ setPrompt, print }, ...args) => {
   const path = args[0] ?? '/'
   const resolvedPath = resolvePath(path)
@@ -32,8 +47,9 @@ export const cd = ({ setPrompt, print }, ...args) => {
 }
 
 export const ls = ({ print }, ...args) => {
+  const [argsWithoutFlags] = getFlagsFromArguments(args)
   // TODO: handle -la shell-like flags
-  const path = args.length === 0 ? getCurrentPath() : args[0]
+  const path = argsWithoutFlags.length === 0 ? getCurrentPath() : argsWithoutFlags[0]
   const resolvedPath = resolvePath(path)
 
   if (!isDirectory(resolvedPath)) {
@@ -50,3 +66,25 @@ export const ls = ({ print }, ...args) => {
     print(formatAccessError('ls', resolvedPath))
   }
 }
+
+export const cat = ({ print, start, stop }, ...args) => {
+  const [argsWithoutFlags] = getFlagsFromArguments(args)
+  const resolvedPath = resolvePath(argsWithoutFlags[0])
+
+  if (isDirectory(resolvedPath)) {
+    print(formatCommandError('cat', resolvedPath, 'is a directory'))
+    return
+  }
+
+  start()
+  const url = new URL(resolvedPath, location.origin)
+  fetch(url)
+    .then(response => response.text())
+    .then(text => {
+      print(text)
+    })
+    .finally(() => {
+      stop()
+    })
+}
+
