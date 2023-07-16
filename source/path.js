@@ -32,10 +32,10 @@ export const resolvePath = (path) => {
     ? resolveAbsolutePath(trimPath) : resolveRelativePath(trimPath)
 }
 
-const insertSuggestion = (input, matches, wordToReplace) => {
+const insertSuggestion = (input, matches, wordToReplace, pre = '') => {
   if (matches.length > 0) {
     const shortestMatch = matches.reduce((a, b) => a.length <= b.length ? a : b)
-    input.value = input.value.replace(` ${wordToReplace}`, ` ${shortestMatch}`)
+    input.value = input.value.replace(`${pre}${wordToReplace}`, `${pre}${shortestMatch}`)
   }
 }
 
@@ -56,7 +56,7 @@ export const autocomplete = (terminal) => {
 
     const directories = Object.keys(fs)
     const matches = directories.filter(command => command.startsWith(resolvedPath))
-    insertSuggestion(input, matches, lastWord)
+    insertSuggestion(input, matches, lastWord, ' ')
   }
 }
 

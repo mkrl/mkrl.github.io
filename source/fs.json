@@ -26,6 +26,39 @@
       }
     ]
   },
+  "/zero/zero.txt": {
+    "name": "zero.txt",
+    "type": "txt"
+  },
+  "/zero/null/item.txt": {
+    "name": "item.txt",
+    "type": "txt"
+  },
+  "/zero/null": {
+    "name": "null",
+    "type": "dir",
+    "entries": [
+      {
+        "name": "item.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  "/zero": {
+    "name": "zero",
+    "type": "dir",
+    "entries": [
+      {
+        "name": "null",
+        "type": "dir",
+        "path": "/zero/null"
+      },
+      {
+        "name": "zero.txt",
+        "type": "txt"
+      }
+    ]
+  },
   "/contact/nested/doublenested/file.txt": {
     "name": "file.txt",
     "type": "txt"
@@ -88,6 +121,11 @@
         "name": "void",
         "type": "dir",
         "path": "/void"
+      },
+      {
+        "name": "zero",
+        "type": "dir",
+        "path": "/zero"
       }
     ]
   }

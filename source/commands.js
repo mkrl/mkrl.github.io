@@ -83,8 +83,31 @@ export const cat = ({ print, start, stop }, ...args) => {
     .then(text => {
       print(text)
     })
-    .finally(() => {
-      stop()
-    })
+    .finally(stop)
+}
+
+const TREE_PREFIX = '└──'
+
+const listTreeDirectory = (path, level, print) => {
+  const dir = fs[path]
+  dir.entries.map(entry => {
+    const prefix = TREE_PREFIX.repeat(level + 1)
+    const formattedEntry = `${prefix} ${formatDirItem(entry)}`
+    print(formattedEntry)
+    if (entry.type === 'dir') {
+      listTreeDirectory(entry.path, level + 1, print)
+    }
+  })
+}
+
+export const tree = ({ print }) => {
+  const root = fs['/']
+  print('/')
+  root.entries.forEach((entry, level) => {
+    print(`${TREE_PREFIX} ${formatDirItem(entry)}`)
+    if (entry.type === 'dir') {
+      listTreeDirectory(entry.path, 1, print)
+    }
+  })
 }
 
