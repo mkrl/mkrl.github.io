@@ -1,8 +1,20 @@
 {
+  "/about.txt": {
+    "name": "about.txt",
+    "type": "txt"
+  },
   "/void": {
     "name": "void",
     "type": "dir",
     "entries": []
+  },
+  "/contact/email.txt": {
+    "name": "email.txt",
+    "type": "txt"
+  },
+  "/experiments/favicon.txt": {
+    "name": "favicon.txt",
+    "type": "txt"
   },
   "/experiments": {
     "name": "experiments",
@@ -13,6 +25,10 @@
         "type": "txt"
       }
     ]
+  },
+  "/contact/nested/doublenested/file.txt": {
+    "name": "file.txt",
+    "type": "txt"
   },
   "/contact/nested/doublenested": {
     "name": "doublenested",
