@@ -1,6 +1,0 @@
-[submodule "plainterm"]
-	path = plainterm
-	url = https://github.com/mkrl/plainterm.js.git
-[submodule "fresh-theme-positive"]
-	path = fresh-theme-positive
-	url = https://github.com/mkrl/fresh-theme-positive.git

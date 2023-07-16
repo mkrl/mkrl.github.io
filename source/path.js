@@ -32,18 +32,31 @@ export const resolvePath = (path) => {
     ? resolveAbsolutePath(trimPath) : resolveRelativePath(trimPath)
 }
 
-export const autocomplete = (input) => {
-  const words = input.value.split(' ')
-  const directories = Object.keys(fs)
+const insertSuggestion = (input, matches, wordToReplace) => {
+  if (matches.length > 0) {
+    const shortestMatch = matches.reduce((a, b) => a.length <= b.length ? a : b)
+    input.value = input.value.replace(wordToReplace, shortestMatch)
+  }
+}
+
+export const autocomplete = (terminal) => {
+  const { input } = terminal
+  const words = input.value.trim().split(' ')
+
+  // Autocomplete the command itself
+  if (words.length === 1) {
+    const matches = Object.keys(terminal.settings.commands).filter(command => command.startsWith(words[0]))
+    insertSuggestion(input, matches, words[0])
+  }
+
+  // Autocomplete path to file or directory
   if (words.length > 1) {
     const lastWord = words.pop()
     const resolvedPath = resolvePath(lastWord)
+
+    const directories = Object.keys(fs)
     const matches = directories.filter(command => command.startsWith(resolvedPath))
-    const exactMatch = matches.find(command => command === resolvedPath)
-    if (matches.length > 0 && !exactMatch) {
-      const foundMatch = matches.reduce((a, b) => a.length <= b.length ? a : b)
-      input.value = input.value.replace(lastWord, foundMatch)
-    }
+    insertSuggestion(input, matches, lastWord)
   }
 }
 
@@ -51,7 +64,7 @@ export const createAutoComplete = (terminal) => {
   const { input } = terminal
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Tab') {
-      autocomplete(input)
+      autocomplete(terminal)
       e.preventDefault()
     }
   })
