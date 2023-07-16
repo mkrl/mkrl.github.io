@@ -1,5 +1,6 @@
 import { initTerminal } from 'ttty'
 import { cd, DEFAULT_PROMPT, ls } from './commands'
+import { createAutoComplete } from './path'
 
 const terminal = initTerminal({
     host: document.querySelector('#terminal'),
@@ -26,5 +27,6 @@ const terminal = initTerminal({
     }
 })
 
+createAutoComplete(terminal)
 
 terminal.input.focus()

@@ -27,13 +27,18 @@ async function walkDirectory(dir) {
     }
 
     const stats = await lstat(entry)
+    const absolutePath = path.basename(entry) === 'fs' ? '/' : `/${entry.slice(FS_DIR.length)}`
+
     if (!stats.isDirectory()) {
+      objMap[absolutePath] = {
+        name: path.basename(entry),
+        type: path.extname(entry).slice(1)
+      }
       return {
         name: path.basename(entry),
         type: path.extname(entry).slice(1)
       }
     }
-    const absolutePath = path.basename(entry) === 'fs' ? '/' : `/${entry.slice(FS_DIR.length)}`
 
     const files = await readdir(entry)
     const childEntries = await Promise.all(
