@@ -40,7 +40,7 @@ main.terminal {
 }
 
 .terminal .ls-dir.ls-item {
-    color: var(--terminal-accent-color, #ffff7d);
+    color: #227dff;
 }
 
 @media (max-width: 768px) {
