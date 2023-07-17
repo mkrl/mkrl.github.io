@@ -18,3 +18,10 @@ To regenerate the filesystem, run `npm run fs`.
 Build with `npm run build` (assembled in /dist, ready to deploy).
 
 
+Things TODO:
+
+- add cowsay
+- add man?
+- curl (wrap fetch)
+- weather
+- neofetch

@@ -1,5 +1,7 @@
-export const USERNAME = 'guest@mkrl.xyz'
 import fs from './fs.json'
+
+export const USERNAME = 'guest@mkrl.xyz'
+
 const VFS_URL_PREFIX = 'vfs://.'
 let currentPath = '/'
 
@@ -41,6 +43,8 @@ const insertSuggestion = (input, matches, wordToReplace, pre = '') => {
 
 export const autocomplete = (terminal) => {
   const { input } = terminal
+  if (!input.value) return
+
   const words = input.value.trim().split(' ')
 
   // Autocomplete the command itself

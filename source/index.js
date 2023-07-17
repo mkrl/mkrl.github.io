@@ -1,5 +1,5 @@
 import { initTerminal } from 'ttty'
-import { cat, cd, DEFAULT_PROMPT, ls, tree } from './commands'
+import { cat, cd, DEFAULT_PROMPT, ls, sl, tree } from './commands'
 import { createAutoComplete } from './path'
 
 const terminal = initTerminal({
@@ -23,6 +23,11 @@ const terminal = initTerminal({
             name: 'ls',
             description: 'list directory contents',
             func: ls,
+        },
+        sl: {
+            name: 'sl',
+            description: 'run a steam locomotive',
+            func: sl,
         },
         cat: {
             name: 'cat',
