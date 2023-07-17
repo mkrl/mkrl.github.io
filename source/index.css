@@ -14,6 +14,12 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+body.sl {
+    pointer-events: none;
+}
+body.sl .terminal {
+    display: none;
+}
 
 .terminal {
     width: 100%;
@@ -47,5 +53,21 @@ main.terminal {
     main.terminal {
         font-size: 14px;
         padding: 0.5rem;
+    }
+}
+
+#sl {
+    display: flex;
+    align-self: end;
+    animation: choo-choo 10s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes choo-choo {
+    0% {
+        transform: translateX(110%);
+    }
+    100% {
+        transform: translateX(-210%);
     }
 }

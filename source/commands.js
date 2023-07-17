@@ -1,5 +1,6 @@
 import fs from './fs.json'
 import { getCurrentPath, resolvePath, setCurrentPath, USERNAME } from './path'
+import { startLocomotive } from './sl'
 
 export const DEFAULT_PROMPT = `${USERNAME}:/$ `
 
@@ -109,5 +110,11 @@ export const tree = ({ print }) => {
       listTreeDirectory(entry.path, 1, print)
     }
   })
+}
+
+export const sl = ({ start, stop }) => {
+  start()
+  startLocomotive()
+    .finally(stop)
 }
 
