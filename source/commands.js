@@ -72,6 +72,11 @@ export const cat = ({ print, start, stop }, ...args) => {
   const [argsWithoutFlags] = getFlagsFromArguments(args)
   const resolvedPath = resolvePath(argsWithoutFlags[0])
 
+  if (!(resolvedPath in fs)) {
+    print(formatAccessError('cat', resolvedPath))
+    return
+  }
+
   if (isDirectory(resolvedPath)) {
     print(formatCommandError('cat', resolvedPath, 'is a directory'))
     return
