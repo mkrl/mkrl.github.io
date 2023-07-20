@@ -23,9 +23,9 @@ const formatNotAFolderError = (path) =>
 const formatDirItem = (item) =>
   `<span class="ls-item${fileTypeMap[item.type] ?? ''}">${item.name}</span>`
 
-const formatFolder = (directory) => {
+const formatFolder = (entries) => {
   const table = document.createElement('table')
-  directory.entries.forEach(entry => {
+  entries.forEach(entry => {
     const row = document.createElement('tr')
     const name = document.createElement('td')
     const description = document.createElement('td')
@@ -70,6 +70,7 @@ export const ls = ({ print }, ...args) => {
   const [argsWithoutFlags, flags] = getFlagsFromArguments(args)
 
   const tableView = flags.includes('l')
+  const listAll = flags.includes('a')
 
   const path = argsWithoutFlags.length === 0 ? getCurrentPath() : argsWithoutFlags[0]
   const resolvedPath = resolvePath(path)
@@ -83,13 +84,18 @@ export const ls = ({ print }, ...args) => {
     print(fs[resolvedPath].name)
     return
   }
+
+  const items = !listAll
+    ? fs[resolvedPath].entries
+    : [{ name: '.' }, { name: '..' }, ...fs[resolvedPath].entries ]
+
   if (tableView) {
-    print(`${fs[resolvedPath].entries.length} total`)
-    print(formatFolder(fs[resolvedPath]))
+    print(`${items.length} total`)
+    print(formatFolder(items))
     return
   }
   print(
-    fs[resolvedPath].entries
+    items
       .map(formatDirItem)
       .join('')
   )
