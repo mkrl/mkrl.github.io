@@ -3,17 +3,22 @@
     "name": "about.txt",
     "type": "txt"
   },
-  "/void": {
-    "name": "void",
-    "type": "dir",
-    "entries": []
-  },
-  "/contact/email.txt": {
-    "name": "email.txt",
+  "/contact/README.txt": {
+    "name": "README.txt",
     "type": "txt"
   },
-  "/experiments/favicon.txt": {
-    "name": "favicon.txt",
+  "/contact": {
+    "name": "contact",
+    "type": "dir",
+    "entries": [
+      {
+        "name": "README.txt",
+        "type": "txt"
+      }
+    ]
+  },
+  "/experiments/README.txt": {
+    "name": "README.txt",
     "type": "txt"
   },
   "/experiments": {
@@ -21,81 +26,8 @@
     "type": "dir",
     "entries": [
       {
-        "name": "favicon.txt",
+        "name": "README.txt",
         "type": "txt"
-      }
-    ]
-  },
-  "/zero/zero.txt": {
-    "name": "zero.txt",
-    "type": "txt"
-  },
-  "/zero/null/item.txt": {
-    "name": "item.txt",
-    "type": "txt"
-  },
-  "/zero/null": {
-    "name": "null",
-    "type": "dir",
-    "entries": [
-      {
-        "name": "item.txt",
-        "type": "txt"
-      }
-    ]
-  },
-  "/zero": {
-    "name": "zero",
-    "type": "dir",
-    "entries": [
-      {
-        "name": "null",
-        "type": "dir",
-        "path": "/zero/null"
-      },
-      {
-        "name": "zero.txt",
-        "type": "txt"
-      }
-    ]
-  },
-  "/contact/nested/doublenested/file.txt": {
-    "name": "file.txt",
-    "type": "txt"
-  },
-  "/contact/nested/doublenested": {
-    "name": "doublenested",
-    "type": "dir",
-    "entries": [
-      {
-        "name": "file.txt",
-        "type": "txt"
-      }
-    ]
-  },
-  "/contact/nested": {
-    "name": "nested",
-    "type": "dir",
-    "entries": [
-      {
-        "name": "doublenested",
-        "type": "dir",
-        "path": "/contact/nested/doublenested"
-      }
-    ]
-  },
-  "/contact": {
-    "name": "contact",
-    "type": "dir",
-    "entries": [
-      {
-        "name": "email.txt",
-        "type": "txt"
-      },
-      {
-        "name": "nested",
-        "type": "dir",
-        "path": "/contact/nested"
       }
     ]
   },
@@ -116,16 +48,6 @@
         "name": "experiments",
         "type": "dir",
         "path": "/experiments"
-      },
-      {
-        "name": "void",
-        "type": "dir",
-        "path": "/void"
-      },
-      {
-        "name": "zero",
-        "type": "dir",
-        "path": "/zero"
       }
     ]
   }

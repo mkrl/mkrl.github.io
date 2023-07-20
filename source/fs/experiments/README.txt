@@ -1,0 +1,1 @@
+A compilation of my hobby projects in software, hardware and other (sometimes silly) things
