@@ -4,6 +4,11 @@ import { startLocomotive } from './sl'
 
 export const DEFAULT_PROMPT = `${USERNAME}:/$ `
 
+const fileTypeMap = {
+  url: ' ls-url',
+  dir:  ' ls-dir'
+}
+
 const isDirectory = (path) => fs[path].type === 'dir'
 
 const formatCommandError = (command, path, message) =>
@@ -16,7 +21,21 @@ const formatNotAFolderError = (path) =>
   formatCommandError('cd', path, 'not a directory:')
 
 const formatDirItem = (item) =>
-  `<span class="ls-item${item.type === 'dir' ? ' ls-dir' : ''}">${item.name}</span>`
+  `<span class="ls-item${fileTypeMap[item.type] ?? ''}">${item.name}</span>`
+
+const formatFolder = (directory) => {
+  const table = document.createElement('table')
+  directory.entries.forEach(entry => {
+    const row = document.createElement('tr')
+    const name = document.createElement('td')
+    const description = document.createElement('td')
+    name.innerHTML = formatDirItem(entry)
+    description.innerText = entry.description ?? ''
+    row.append(name, description)
+    table.append(row)
+  })
+  return table.outerHTML
+}
 
 const getFlagsFromArguments = (args) => {
   const flags = new Set()
@@ -48,24 +67,32 @@ export const cd = ({ setPrompt, print }, ...args) => {
 }
 
 export const ls = ({ print }, ...args) => {
-  const [argsWithoutFlags] = getFlagsFromArguments(args)
-  // TODO: handle -la shell-like flags
+  const [argsWithoutFlags, flags] = getFlagsFromArguments(args)
+
+  const tableView = flags.includes('l')
+
   const path = argsWithoutFlags.length === 0 ? getCurrentPath() : argsWithoutFlags[0]
   const resolvedPath = resolvePath(path)
+
+  if (!(resolvedPath in fs)) {
+    print(formatAccessError('ls', resolvedPath))
+    return
+  }
 
   if (!isDirectory(resolvedPath)) {
     print(fs[resolvedPath].name)
     return
   }
-  try {
-    print(
-      fs[resolvedPath].entries
-        .map(formatDirItem)
-        .join('')
-    )
-  } catch (e) {
-    print(formatAccessError('ls', resolvedPath))
+  if (tableView) {
+    print(`${fs[resolvedPath].entries.length} total`)
+    print(formatFolder(fs[resolvedPath]))
+    return
   }
+  print(
+    fs[resolvedPath].entries
+      .map(formatDirItem)
+      .join('')
+  )
 }
 
 export const cat = ({ print, start, stop }, ...args) => {
@@ -82,11 +109,18 @@ export const cat = ({ print, start, stop }, ...args) => {
     return
   }
 
+  const isUrlFile = fs[resolvedPath].type === 'url'
+
   start()
-  const url = new URL(resolvedPath, location.origin)
-  fetch(url)
+  fetch(new URL(resolvedPath, location.origin))
     .then(response => response.text())
     .then(text => {
+      if (isUrlFile) {
+        const [details, url] = text.split('\n')
+        print(details)
+        print(`<a href="${url}" class="ls-url" target="_blank">${url}</a>`)
+        return
+      }
       print(text)
     })
     .finally(stop)

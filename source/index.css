@@ -35,7 +35,6 @@ main.terminal {
 
 .terminal, .terminal input {
     text-shadow: 0.125rem 0 0.06rem #ea36af33, -0.125rem 0 0.06rem #75fa6938;
-    letter-spacing: 1px;
 }
 
 .terminal .terminal-type > span {
@@ -46,8 +45,19 @@ main.terminal {
     margin-right: 10pt;
 }
 
-.terminal .ls-dir.ls-item {
+.terminal .ls-dir {
     color: #227dff;
+}
+.terminal .ls-url {
+    color: #0fff1a;
+}
+.terminal table {
+    border: 0;
+}
+.terminal table td {
+    border: 0;
+    padding-right: 10pt;
+    border-bottom: 1px #fff dashed;
 }
 
 @media (max-width: 768px) {
