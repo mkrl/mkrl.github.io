@@ -3,67 +3,13 @@
     "name": "about.txt",
     "type": "txt"
   },
-  "/experiments/README.txt": {
-    "name": "README.txt",
-    "type": "txt"
-  },
   "/contact/README.txt": {
     "name": "README.txt",
     "type": "txt"
   },
-  "/experiments/favicon-player.url": {
-    "name": "favicon-player.url",
-    "type": "url",
-    "url": "https://github.com/mkrl/faviconayer",
-    "description": "Utilizing WebCodecs API to convert & play video stream in a website favicon. I think WebCodecs API is a great addition to the web platform, and I wanted to explore it a bit more. I also wanted to see if it was possible to play a video stream in a website favicon. Turns out it is! I made a small demo to show how it can be done. It's not very useful, but it's fun!"
-  },
-  "/experiments/fibonacci-indent.url": {
-    "name": "fibonacci-indent.url",
-    "type": "url",
-    "url": "https://github.com/mkrl/fibonacci-indent",
-    "description": "Atom (you will never be forgotten) package that adjusts your indentation according to the Fibonacci sequence. Tabs or spaces, it doesn't matter. It's all about the numbers."
-  },
-  "/experiments/nodecg-layouts.url": {
-    "name": "nodecg-layouts.url",
-    "type": "url",
-    "url": "https://github.com/mkrl/nodecg-react-layouts",
-    "description": "A NodeCG (broadcast graphics software) starter bundle for an easy state-to-replicant management. Words probably don't make sense, unless you come from the NodeCG world."
-  },
-  "/experiments/misbrands.url": {
-    "name": "misbrands.url",
-    "type": "url",
-    "url": "https://github.com/mkrl/misbrands",
-    "description": "A collection of slightly cursed programming stickers. Print and hand them out on the next conference! Check out the pull requests for more stickers."
-  },
-  "/experiments/pgrant.url": {
-    "name": "pgrant.url",
-    "type": "url",
-    "url": "https://github.com/mkrl/pgrant",
-    "description": "A GUI wrapper for distributing promotional items in Valve Software games."
-  },
-  "/experiments/rack-timeout.url": {
-    "name": "rack-timeout.url",
-    "type": "url",
-    "url": "https://github.com/mkrl/rack-timeout",
-    "description": "A fork of Rack::Timeout that can be configured to ignore certain Rails request routes. Made for a Stack Overflow question with a bounty :)"
-  },
-  "/experiments/table-debugger.url": {
-    "name": "table-debugger.url",
-    "type": "url",
-    "url": "https://twitter.com/mkrl__/status/1365774927018807297",
-    "description": "My first Arduino project is connecting Chrome Developer tools to a table. Smash it for the next breakpoint and instant stress relief."
-  },
-  "/experiments/trow.url": {
-    "name": "trow.url",
-    "type": "url",
-    "url": "https://trow.app/",
-    "description": "An extremely basic (just the way I like it) version of the scrum poker. Works over WebRTC."
-  },
-  "/experiments/ttty.url": {
-    "name": "ttty.url",
-    "type": "url",
-    "url": "https://mkrl.xyz/ttty/",
-    "description": "A very simple pure JS lightweight terminal \"emulator\" that's powering this very website. I managed to squeeze the basic functionality into ~5kb (non-minified)."
+  "/experiments/README.txt": {
+    "name": "README.txt",
+    "type": "txt"
   },
   "/contact/blog.url": {
     "name": "blog.url",
@@ -89,6 +35,95 @@
     "url": "https://www.linkedin.com/in/mkrl/",
     "description": "Let's connect!"
   },
+  "/experiments/favicon-player.url": {
+    "name": "favicon-player.url",
+    "type": "url",
+    "url": "https://github.com/mkrl/faviconayer",
+    "description": "Utilizing WebCodecs API to convert & play video stream in a website favicon. I think WebCodecs API is a great addition to the web platform."
+  },
+  "/experiments/fibonacci-indent.url": {
+    "name": "fibonacci-indent.url",
+    "type": "url",
+    "url": "https://github.com/mkrl/fibonacci-indent",
+    "description": "Atom (you will never be forgotten) package that adjusts your indentation according to the Fibonacci sequence. Tabs or spaces, it doesn't matter. It's all about the numbers."
+  },
+  "/experiments/misbrands.url": {
+    "name": "misbrands.url",
+    "type": "url",
+    "url": "https://github.com/mkrl/misbrands",
+    "description": "A collection of slightly cursed programming stickers. Print and hand them out on the next conference! Check out the pull requests for more stickers."
+  },
+  "/experiments/nodecg-layouts.url": {
+    "name": "nodecg-layouts.url",
+    "type": "url",
+    "url": "https://github.com/mkrl/nodecg-react-layouts",
+    "description": "A NodeCG (broadcast graphics software) starter bundle for an easy state-to-replicant management. Words probably don't make sense, unless you come from the NodeCG world."
+  },
+  "/experiments/pgrant.url": {
+    "name": "pgrant.url",
+    "type": "url",
+    "url": "https://github.com/mkrl/pgrant",
+    "description": "A GUI wrapper for distributing promotional items in Valve Software games."
+  },
+  "/experiments/rack-timeout.url": {
+    "name": "rack-timeout.url",
+    "type": "url",
+    "url": "https://github.com/mkrl/rack-timeout",
+    "description": "A fork of Rack::Timeout that can be configured to ignore certain Rails request routes. Made for a Stack Overflow question with a bounty :)"
+  },
+  "/experiments/table-debugger.url": {
+    "name": "table-debugger.url",
+    "type": "url",
+    "url": "https://twitter.com/mkrl__/status/1365774927018807297",
+    "description": "My first Arduino project is connecting Chrome Developer tools to a table. Smash it for the next breakpoint and an instant stress relief."
+  },
+  "/experiments/trow.url": {
+    "name": "trow.url",
+    "type": "url",
+    "url": "https://trow.app/",
+    "description": "An extremely basic (just the way I like it) version of the scrum poker. Works over WebRTC."
+  },
+  "/experiments/ttty.url": {
+    "name": "ttty.url",
+    "type": "url",
+    "url": "https://mkrl.xyz/ttty/",
+    "description": "A very simple pure JS lightweight terminal \"emulator\" that's powering this very website. I managed to squeeze the basic functionality into ~5kb (non-minified)."
+  },
+  "/contact": {
+    "name": "contact",
+    "type": "dir",
+    "description": "Find ways to contact me",
+    "entries": [
+      {
+        "name": "README.txt",
+        "type": "txt"
+      },
+      {
+        "name": "blog.url",
+        "type": "url",
+        "url": "https://dev.to/mkrl",
+        "description": "I sometimes write but there's not much to see. More stuff anytime soon? Who knows."
+      },
+      {
+        "name": "email.url",
+        "type": "url",
+        "url": "self@mkrl.xyz",
+        "description": "My personal email. Please do not share it with anyone else. I will not share it with anyone else (this text was generated by Github Copilot and I love it)"
+      },
+      {
+        "name": "github.url",
+        "type": "url",
+        "url": "https://github.com/mkrl",
+        "description": "A Github page of mine. Some of my actual paid work is open-source, so you can take a peek at that too."
+      },
+      {
+        "name": "linkedin.url",
+        "type": "url",
+        "url": "https://www.linkedin.com/in/mkrl/",
+        "description": "Let's connect!"
+      }
+    ]
+  },
   "/experiments": {
     "name": "experiments",
     "type": "dir",
@@ -102,7 +137,7 @@
         "name": "favicon-player.url",
         "type": "url",
         "url": "https://github.com/mkrl/faviconayer",
-        "description": "Utilizing WebCodecs API to convert & play video stream in a website favicon. I think WebCodecs API is a great addition to the web platform, and I wanted to explore it a bit more. I also wanted to see if it was possible to play a video stream in a website favicon. Turns out it is! I made a small demo to show how it can be done. It's not very useful, but it's fun!"
+        "description": "Utilizing WebCodecs API to convert & play video stream in a website favicon. I think WebCodecs API is a great addition to the web platform."
       },
       {
         "name": "fibonacci-indent.url",
@@ -138,7 +173,7 @@
         "name": "table-debugger.url",
         "type": "url",
         "url": "https://twitter.com/mkrl__/status/1365774927018807297",
-        "description": "My first Arduino project is connecting Chrome Developer tools to a table. Smash it for the next breakpoint and instant stress relief."
+        "description": "My first Arduino project is connecting Chrome Developer tools to a table. Smash it for the next breakpoint and an instant stress relief."
       },
       {
         "name": "trow.url",
@@ -151,41 +186,6 @@
         "type": "url",
         "url": "https://mkrl.xyz/ttty/",
         "description": "A very simple pure JS lightweight terminal \"emulator\" that's powering this very website. I managed to squeeze the basic functionality into ~5kb (non-minified)."
-      }
-    ]
-  },
-  "/contact": {
-    "name": "contact",
-    "type": "dir",
-    "description": "Find ways to contact me",
-    "entries": [
-      {
-        "name": "README.txt",
-        "type": "txt"
-      },
-      {
-        "name": "blog.url",
-        "type": "url",
-        "url": "https://dev.to/mkrl",
-        "description": "I sometimes write but there's not much to see. More stuff anytime soon? Who knows."
-      },
-      {
-        "name": "email.url",
-        "type": "url",
-        "url": "self@mkrl.xyz",
-        "description": "My personal email. Please do not share it with anyone else. I will not share it with anyone else (this text was generated by Github Copilot and I love it)"
-      },
-      {
-        "name": "github.url",
-        "type": "url",
-        "url": "https://github.com/mkrl",
-        "description": "A Github page of mine. Some of my actual paid work is open-source, so you can take a peek at that too."
-      },
-      {
-        "name": "linkedin.url",
-        "type": "url",
-        "url": "https://www.linkedin.com/in/mkrl/",
-        "description": "Let's connect!"
       }
     ]
   },

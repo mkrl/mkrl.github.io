@@ -1,2 +1,2 @@
-Utilizing WebCodecs API to convert & play video stream in a website favicon. I think WebCodecs API is a great addition to the web platform, and I wanted to explore it a bit more. I also wanted to see if it was possible to play a video stream in a website favicon. Turns out it is! I made a small demo to show how it can be done. It's not very useful, but it's fun!
+Utilizing WebCodecs API to convert & play video stream in a website favicon. I think WebCodecs API is a great addition to the web platform.
 https://github.com/mkrl/faviconayer
