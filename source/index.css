@@ -30,6 +30,7 @@ body.sl .terminal {
 main.terminal {
     font-size: 18px;
     padding: 3rem;
+    white-space: pre-line;
 }
 
 .terminal, .terminal input {
