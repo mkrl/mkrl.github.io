@@ -1,1 +1,1 @@
-Hello there my friends
+Hi. I'm Mikhail. I'm a software engineer. This is my home page. You won't be greeted with a logotype, fancy design or a catchy title.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code.
