@@ -1,0 +1,2 @@
+A fork of Rack::Timeout that can be configured to ignore certain Rails request routes. Made for a Stack Overflow question with a bounty :)
+https://github.com/mkrl/rack-timeout
