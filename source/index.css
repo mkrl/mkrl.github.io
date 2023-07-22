@@ -54,6 +54,10 @@ main.terminal {
 .terminal table {
     border: 0;
 }
+
+.terminal .user {
+    color: #ff8500
+}
 .terminal table td {
     border: 0;
     padding-right: 10pt;

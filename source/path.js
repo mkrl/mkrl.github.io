@@ -1,6 +1,6 @@
 import fs from './fs.json'
 
-export const USERNAME = 'guest@mkrl.xyz'
+export const USERNAME = '<span class="user">guest@mkrl.xyz</span>'
 
 const VFS_URL_PREFIX = 'vfs://.'
 let currentPath = '/'
