@@ -4,6 +4,8 @@ import { startLocomotive } from './sl'
 
 export const DEFAULT_PROMPT = `${USERNAME}:/$ `
 
+const startDate = new Date()
+
 const fileTypeMap = {
   url: ' ls-url',
   dir:  ' ls-dir'
@@ -163,3 +165,36 @@ export const sl = ({ start, stop }) => {
     .finally(stop)
 }
 
+const formatUptime = (now) => {
+  const diff = now - startDate
+  const seconds = Math.floor(diff / 1000)
+  const minutes = Math.floor(seconds / 60)
+  const hours = Math.floor(minutes / 60)
+  const days = Math.floor(hours / 24)
+
+  const timeUnits = [
+    { unit: 'day', value: days },
+    { unit: 'hour', value: hours % 24 },
+    { unit: 'minute', value: minutes % 60 },
+    { unit: 'second', value: seconds % 60 }
+  ]
+
+  return timeUnits
+    .filter(unit => unit.value > 0)
+    .map(unit => `${unit.value} ${unit.unit}${unit.value > 1 ? 's' : ''}`)
+    .join(', ')
+}
+
+export const uptime = ({ print }) => {
+  const timeFormat = new Intl.DateTimeFormat(
+    'en-en',
+    {
+      hour: 'numeric', minute: 'numeric',
+      second: 'numeric',
+      hour12: false
+    }
+  )
+
+  const now = new Date()
+  print(`${timeFormat.format(new Date())} up ${formatUptime(now)}, 1 user, load average: 0.00, 0.00, 0.00`)
+}

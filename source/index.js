@@ -1,5 +1,5 @@
 import { initTerminal } from 'ttty'
-import { cat, cd, DEFAULT_PROMPT, ls, sl, tree } from './commands'
+import { cat, cd, DEFAULT_PROMPT, ls, sl, tree, uptime } from './commands'
 import { createAutoComplete } from './path'
 import { createEasterEgg } from './egg'
 
@@ -33,6 +33,16 @@ const terminal = initTerminal({
             name: 'tree',
             description: 'list all files and directories in a tree-like format',
             func: tree,
+        },
+        clear: {
+            name: 'clear',
+            description: 'wipe the terminal screen',
+            func: ({ commandContainer }) => commandContainer.innerHTML = '',
+        },
+        uptime: {
+            name: 'uptime',
+            description: 'how long have you been here?',
+            func: uptime,
         },
     }
 })
