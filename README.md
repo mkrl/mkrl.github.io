@@ -4,24 +4,20 @@ The terminal functionality is covered by [ttty](https://github.com/mkrl/ttty) - 
 
 Bundling handled by Vite
 
-#### Build
+#### Get started
 
 ```
 npm i
 npm start
 ```
+
+#### Change stuff
+
 Modify source @ `/source/`
 
 Files and directories put in `/source/fs/` will appear in the virtual filesystem and available for traversing.
+Files with `.url` extension will have the extension stripped from the filesystem and will be treated as links. `.url` files should contain strictly two lines only: description and URL.
+
 To regenerate the filesystem, run `npm run fs`.
 
 Build with `npm run build` (assembled in /dist, ready to deploy).
-
-
-Things TODO:
-
-- add cowsay
-- add man?
-- curl (wrap fetch)
-- weather
-- neofetch

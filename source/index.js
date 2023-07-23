@@ -5,7 +5,6 @@ import { createEasterEgg } from './egg'
 
 const terminal = initTerminal({
     host: document.querySelector('#terminal'),
-    welcomeMessage: `Hi. Make yourself at home. Don't hesitate to ask for help if you need it.`,
     prompt: DEFAULT_PROMPT,
     commands: {
         cd: {
@@ -48,8 +47,18 @@ const terminal = initTerminal({
 })
 
 createAutoComplete(terminal)
-
-terminal.input.focus()
-
 createEasterEgg(terminal)
 
+const init = async () => {
+    if (await terminal.type('cat /about.txt', 60, true)) {
+        terminal.run('cat /about.txt')
+        if (await terminal.type('help', 60, true)) {
+            terminal.run('help')
+            if (await terminal.type('ls -la /experiments', 60, true)) {
+                terminal.run('ls -la /experiments')
+            }
+        }
+    }
+    terminal.input.focus()
+}
+init()
