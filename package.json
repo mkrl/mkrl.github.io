@@ -5,7 +5,7 @@
   "main": "source/index.js",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "vite build && cp favicon.ico dist/favicon.ico",
     "fs": "node generate.mjs"
   },
   "repository": {
