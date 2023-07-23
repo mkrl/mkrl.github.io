@@ -20,12 +20,14 @@ async function exists(file) {
   }
 }
 
-async function getUrlFile(file, extension) {
+async function getFileContents(file, extension) {
+  const data = await readFile(file, 'utf-8')
   if (extension !== 'url') {
-    return {}
+    return {
+      data
+    }
   }
-  const contents = await readFile(file, 'utf-8')
-  const [description, url] = contents.split('\n')
+  const [description, url] = data.split('\n')
   return {
     url,
     description,
@@ -44,16 +46,22 @@ async function walkDirectory(dir) {
 
     if (!stats.isDirectory()) {
       const extension = path.extname(entry).slice(1)
-      const urlData = await getUrlFile(entry, extension)
-      objMap[absolutePath] = {
-        name: path.basename(entry),
+      const name = extension === 'url'
+        ? path.basename(entry).slice(0, -4)
+        : path.basename(entry)
+      const sanitizedPath = extension === 'url'
+        ? absolutePath.slice(0, -4)
+        : absolutePath
+      const contents = await getFileContents(entry, extension)
+      objMap[sanitizedPath] = {
+        name,
         type: extension,
-        ...urlData,
+        ...contents,
       }
       return {
-        name: path.basename(entry),
+        name,
         type: extension,
-        ...urlData,
+        ...contents,
       }
     }
 

@@ -11,6 +11,14 @@ const fileTypeMap = {
   dir:  ' ls-dir'
 }
 
+const getNodeAttributes = (item) => {
+  const node = item.type === 'url' ? 'a' : 'span'
+  const properties = item.type === 'url'
+    ? ` href="${item.url}" target="_blank"`
+    : ''
+  return [`<${node}${properties}`, `</${node}>`]
+}
+
 const isDirectory = (path) => fs[path].type === 'dir'
 
 const formatCommandError = (command, path, message) =>
@@ -22,8 +30,10 @@ const formatAccessError = (command, path) =>
 const formatNotAFolderError = (path) =>
   formatCommandError('cd', path, 'not a directory:')
 
-const formatDirItem = (item) =>
-  `<span class="ls-item${fileTypeMap[item.type] ?? ''}">${item.name}</span>`
+const formatDirItem = (item) => {
+  const [openTag, closeTag] = getNodeAttributes(item)
+  return `${openTag} class="ls-item${fileTypeMap[item.type] ?? ''}">${item.name}${closeTag}`
+}
 
 const formatFolder = (entries) => {
   const table = document.createElement('table')
@@ -119,19 +129,28 @@ export const cat = ({ print, start, stop }, ...args) => {
 
   const isUrlFile = fs[resolvedPath].type === 'url'
 
-  start()
-  fetch(new URL(resolvedPath, location.origin))
-    .then(response => response.text())
-    .then(text => {
-      if (isUrlFile) {
-        const [details, url] = text.split('\n')
-        print(details)
-        print(`<a href="${url}" class="ls-url" target="_blank">${url}</a>`)
-        return
-      }
-      print(text)
-    })
-    .finally(stop)
+  if (isUrlFile) {
+    const { description, url } = fs[resolvedPath]
+    print(description)
+    print(`<a href="${url}" class="ls-url" target="_blank">${url}</a>`)
+    return
+  }
+  print(fs[resolvedPath].data)
+
+  // Async resolver for other (non-text) files (needs to be adjusted for non-text files in generate script)
+  // start()
+  // fetch(new URL(resolvedPath, location.origin))
+  //   .then(response => response.text())
+  //   .then(text => {
+  //     if (isUrlFile) {
+  //       const [details, url] = text.split('\n')
+  //       print(details)
+  //       print(`<a href="${url}" class="ls-url" target="_blank">${url}</a>`)
+  //       return
+  //     }
+  //     print(text)
+  //   })
+  //   .finally(stop)
 }
 
 const TREE_PREFIX = '└──'
