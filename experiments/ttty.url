@@ -1,0 +1,2 @@
+A very simple pure JS lightweight terminal "emulator" that's powering this very website. I managed to squeeze the basic functionality into ~5kb (non-minified).
+https://mkrl.xyz/ttty/
