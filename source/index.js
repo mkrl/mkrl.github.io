@@ -1,11 +1,14 @@
 import { initTerminal } from 'ttty'
-import { cat, cd, DEFAULT_PROMPT, ls, sl, tree, uptime } from './commands'
+import { cat, cd, chainTypeCommands, DEFAULT_PROMPT, ls, sl, tree, uptime } from './commands'
 import { createAutoComplete } from './path'
 import { createEasterEgg } from './egg'
+
+const INIT_SEQUENCE = ['cat /about.txt', 'help', 'ls -la /experiments']
 
 const terminal = initTerminal({
     host: document.querySelector('#terminal'),
     prompt: DEFAULT_PROMPT,
+    history: [...INIT_SEQUENCE].reverse(),
     commands: {
         cd: {
             name: 'cd',
@@ -46,19 +49,10 @@ const terminal = initTerminal({
     }
 })
 
-createAutoComplete(terminal)
-createEasterEgg(terminal)
-
 const init = async () => {
-    if (await terminal.type('cat /about.txt', 60, true)) {
-        terminal.run('cat /about.txt')
-        if (await terminal.type('help', 60, true)) {
-            terminal.run('help')
-            if (await terminal.type('ls -la /experiments', 60, true)) {
-                terminal.run('ls -la /experiments')
-            }
-        }
-    }
+    createAutoComplete(terminal)
+    createEasterEgg(terminal)
+    await chainTypeCommands(INIT_SEQUENCE, terminal)
     terminal.input.focus()
 }
 init()

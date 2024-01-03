@@ -217,3 +217,13 @@ export const uptime = ({ print }) => {
   const now = new Date()
   print(`${timeFormat.format(new Date())} up ${formatUptime(now)}, 1 user, load average: 0.00, 0.00, 0.00`)
 }
+
+export const chainTypeCommands = async (commands, { type, run }, speed = 60) => {
+  for (const command of commands) {
+    if (await type(command, speed, true)) {
+      run(command)
+    } else {
+      break
+    }
+  }
+}

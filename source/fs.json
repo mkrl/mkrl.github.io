@@ -2,7 +2,7 @@
   "/about.txt": {
     "name": "about.txt",
     "type": "txt",
-    "data": "Hi. I'm Mikhail. I'm a software engineer. This is my home page. You won't be greeted with a logotype, fancy design or a catchy title.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code."
+    "data": "Hi.<br/>My name is Mikhail. I'm a software engineer mostly focused on developer experience and advocacy. This is my home page.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code."
   },
   "/contact/README.txt": {
     "name": "README.txt",
@@ -79,6 +79,12 @@
     "type": "url",
     "url": "https://github.com/mkrl/rack-timeout",
     "description": "A fork of Rack::Timeout that can be configured to ignore certain Rails request routes. Made for a Stack Overflow question with a bounty :)"
+  },
+  "/experiments/screamforpapers": {
+    "name": "screamforpapers",
+    "type": "url",
+    "url": "https://chromewebstore.google.com/detail/scream-for-papers/dggogdpgelafkkaekbbggifhbfljlldb",
+    "description": "All-in-one Chromium extension to submit, track and wishlist conference CFPs"
   },
   "/experiments/table-debugger": {
     "name": "table-debugger",
@@ -187,6 +193,12 @@
         "description": "A fork of Rack::Timeout that can be configured to ignore certain Rails request routes. Made for a Stack Overflow question with a bounty :)"
       },
       {
+        "name": "screamforpapers",
+        "type": "url",
+        "url": "https://chromewebstore.google.com/detail/scream-for-papers/dggogdpgelafkkaekbbggifhbfljlldb",
+        "description": "All-in-one Chromium extension to submit, track and wishlist conference CFPs"
+      },
+      {
         "name": "table-debugger",
         "type": "url",
         "url": "https://twitter.com/mkrl__/status/1365774927018807297",
@@ -214,7 +226,7 @@
       {
         "name": "about.txt",
         "type": "txt",
-        "data": "Hi. I'm Mikhail. I'm a software engineer. This is my home page. You won't be greeted with a logotype, fancy design or a catchy title.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code."
+        "data": "Hi.<br/>My name is Mikhail. I'm a software engineer mostly focused on developer experience and advocacy. This is my home page.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code."
       },
       {
         "name": "contact",
