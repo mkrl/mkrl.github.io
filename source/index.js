@@ -3,7 +3,10 @@ import { cat, cd, chainTypeCommands, DEFAULT_PROMPT, ls, sl, tree, uptime } from
 import { createAutoComplete } from './path'
 import { createEasterEgg } from './egg'
 
+const hash = window.location.hash
+
 const INIT_SEQUENCE = ['cat /about.txt', 'help', 'ls -la /experiments']
+const INIT_SEQUENCE_CONTACT = ['ls -la /contact']
 
 const terminal = initTerminal({
     host: document.querySelector('#terminal'),
@@ -52,7 +55,7 @@ const terminal = initTerminal({
 const init = async () => {
     createAutoComplete(terminal)
     createEasterEgg(terminal)
-    await chainTypeCommands(INIT_SEQUENCE, terminal)
+    await chainTypeCommands(hash === '#contact' ? INIT_SEQUENCE_CONTACT : INIT_SEQUENCE, terminal)
     terminal.input.focus()
 }
 init()
