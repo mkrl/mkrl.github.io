@@ -39,6 +39,41 @@
     "url": "https://twitter.com/mkrl__",
     "description": "Short messages on the popular platform"
   },
+  "/talks/ai-narrator": {
+    "name": "ai-narrator",
+    "type": "url",
+    "url": "https://www.youtube.com/live/xUmTPIRFVHQ?si=LWP8orv5B-TF_6Lz&t=9720",
+    "description": "I made an AI narrator for my talks during my 6-hour train to Berlin. It is supposed to have a noir movie narrator personality, but the audience usually asks to make it sarcastic. The ultimate real-time RAG demo."
+  },
+  "/talks/README.txt": {
+    "name": "README.txt",
+    "type": "txt",
+    "data": "Some of my (public) talks and presentations"
+  },
+  "/talks/frontend-tools-of-the-past-today-and-tomorrow": {
+    "name": "frontend-tools-of-the-past-today-and-tomorrow",
+    "type": "url",
+    "url": "https://www.youtube.com/watch?v=rZKhxW5pZnM&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc",
+    "description": "A big deep-dive on latest front-end tooling and infrastructure. Build tools, languages, bundlers and linters."
+  },
+  "/talks/lets-build-everything": {
+    "name": "lets-build-everything",
+    "type": "url",
+    "url": "https://www.youtube.com/watch?v=M6-Cgfu3a50&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=2",
+    "description": "A (fun) lightning talk on how I build and maintain everything I do. Sacred secrets and tricks to keep the juice flowing."
+  },
+  "/talks/reverse-engineering": {
+    "name": "reverse-engineering",
+    "type": "url",
+    "url": "https://www.youtube.com/watch?v=LtQsXiQPdRU&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=4",
+    "description": "A deep dive on reverse-engineering a deployed NextJS app. Uncovering marketing secrets and lies that I made up!"
+  },
+  "/talks/watch-adblocker": {
+    "name": "watch-adblocker",
+    "type": "url",
+    "url": "https://www.youtube.com/watch?v=wNam9C_FOn4&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=3",
+    "description": "A (fun) lightning talk on how I used a Javascript smartwatch to become a Jedi."
+  },
   "/experiments/README.txt": {
     "name": "README.txt",
     "type": "txt",
@@ -110,41 +145,6 @@
     "url": "https://mkrl.xyz/ttty/",
     "description": "A very simple pure JS lightweight terminal \"emulator\" that's powering this very website. I managed to squeeze the basic functionality into ~5kb (non-minified)."
   },
-  "/talks/ai-narrator": {
-    "name": "ai-narrator",
-    "type": "url",
-    "url": "https://www.youtube.com/live/xUmTPIRFVHQ?si=L7b92ZvLE2RY3bxg",
-    "description": "I made an AI narrator for my talks during my 6-hour train to Berlin. It is supposed to have a noir movie narrator personality, but the audience usually asks to make it sarcastic. The ultimate real-time RAG demo."
-  },
-  "/talks/frontend-tools-of-the-past-today-and-tomorrow": {
-    "name": "frontend-tools-of-the-past-today-and-tomorrow",
-    "type": "url",
-    "url": "https://www.youtube.com/watch?v=rZKhxW5pZnM&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc",
-    "description": "A big deep-dive on latest front-end tooling and infrastructure. Build tools, languages, bundlers and linters."
-  },
-  "/talks/README.txt": {
-    "name": "README.txt",
-    "type": "txt",
-    "data": "Some of my (public) talks and presentations"
-  },
-  "/talks/reverse-engineering": {
-    "name": "reverse-engineering",
-    "type": "url",
-    "url": "https://www.youtube.com/watch?v=LtQsXiQPdRU&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=4",
-    "description": "A deep dive on reverse-engineering a deployed NextJS app. Uncovering marketing secrets and lies that I made up!"
-  },
-  "/talks/lets-build-everything": {
-    "name": "lets-build-everything",
-    "type": "url",
-    "url": "https://www.youtube.com/watch?v=M6-Cgfu3a50&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=2",
-    "description": "A (fun) lightning talk on how I build and maintain everything I do. Sacred secrets and tricks to keep the juice flowing."
-  },
-  "/talks/watch-adblocker": {
-    "name": "watch-adblocker",
-    "type": "url",
-    "url": "https://www.youtube.com/watch?v=wNam9C_FOn4&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=3",
-    "description": "A (fun) lightning talk on how I used a Javascript smartwatch to become a Jedi."
-  },
   "/contact": {
     "name": "contact",
     "type": "dir",
@@ -184,6 +184,48 @@
         "type": "url",
         "url": "https://twitter.com/mkrl__",
         "description": "Short messages on the popular platform"
+      }
+    ]
+  },
+  "/talks": {
+    "name": "talks",
+    "type": "dir",
+    "description": "Some of my (public) talks and presentations",
+    "entries": [
+      {
+        "name": "README.txt",
+        "type": "txt",
+        "data": "Some of my (public) talks and presentations"
+      },
+      {
+        "name": "ai-narrator",
+        "type": "url",
+        "url": "https://www.youtube.com/live/xUmTPIRFVHQ?si=LWP8orv5B-TF_6Lz&t=9720",
+        "description": "I made an AI narrator for my talks during my 6-hour train to Berlin. It is supposed to have a noir movie narrator personality, but the audience usually asks to make it sarcastic. The ultimate real-time RAG demo."
+      },
+      {
+        "name": "frontend-tools-of-the-past-today-and-tomorrow",
+        "type": "url",
+        "url": "https://www.youtube.com/watch?v=rZKhxW5pZnM&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc",
+        "description": "A big deep-dive on latest front-end tooling and infrastructure. Build tools, languages, bundlers and linters."
+      },
+      {
+        "name": "lets-build-everything",
+        "type": "url",
+        "url": "https://www.youtube.com/watch?v=M6-Cgfu3a50&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=2",
+        "description": "A (fun) lightning talk on how I build and maintain everything I do. Sacred secrets and tricks to keep the juice flowing."
+      },
+      {
+        "name": "reverse-engineering",
+        "type": "url",
+        "url": "https://www.youtube.com/watch?v=LtQsXiQPdRU&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=4",
+        "description": "A deep dive on reverse-engineering a deployed NextJS app. Uncovering marketing secrets and lies that I made up!"
+      },
+      {
+        "name": "watch-adblocker",
+        "type": "url",
+        "url": "https://www.youtube.com/watch?v=wNam9C_FOn4&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=3",
+        "description": "A (fun) lightning talk on how I used a Javascript smartwatch to become a Jedi."
       }
     ]
   },
@@ -262,48 +304,6 @@
         "type": "url",
         "url": "https://mkrl.xyz/ttty/",
         "description": "A very simple pure JS lightweight terminal \"emulator\" that's powering this very website. I managed to squeeze the basic functionality into ~5kb (non-minified)."
-      }
-    ]
-  },
-  "/talks": {
-    "name": "talks",
-    "type": "dir",
-    "description": "Some of my (public) talks and presentations",
-    "entries": [
-      {
-        "name": "README.txt",
-        "type": "txt",
-        "data": "Some of my (public) talks and presentations"
-      },
-      {
-        "name": "ai-narrator",
-        "type": "url",
-        "url": "https://www.youtube.com/live/xUmTPIRFVHQ?si=L7b92ZvLE2RY3bxg",
-        "description": "I made an AI narrator for my talks during my 6-hour train to Berlin. It is supposed to have a noir movie narrator personality, but the audience usually asks to make it sarcastic. The ultimate real-time RAG demo."
-      },
-      {
-        "name": "frontend-tools-of-the-past-today-and-tomorrow",
-        "type": "url",
-        "url": "https://www.youtube.com/watch?v=rZKhxW5pZnM&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc",
-        "description": "A big deep-dive on latest front-end tooling and infrastructure. Build tools, languages, bundlers and linters."
-      },
-      {
-        "name": "lets-build-everything",
-        "type": "url",
-        "url": "https://www.youtube.com/watch?v=M6-Cgfu3a50&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=2",
-        "description": "A (fun) lightning talk on how I build and maintain everything I do. Sacred secrets and tricks to keep the juice flowing."
-      },
-      {
-        "name": "reverse-engineering",
-        "type": "url",
-        "url": "https://www.youtube.com/watch?v=LtQsXiQPdRU&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=4",
-        "description": "A deep dive on reverse-engineering a deployed NextJS app. Uncovering marketing secrets and lies that I made up!"
-      },
-      {
-        "name": "watch-adblocker",
-        "type": "url",
-        "url": "https://www.youtube.com/watch?v=wNam9C_FOn4&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=3",
-        "description": "A (fun) lightning talk on how I used a Javascript smartwatch to become a Jedi."
       }
     ]
   },
