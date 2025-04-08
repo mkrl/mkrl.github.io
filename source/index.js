@@ -5,7 +5,7 @@ import { createEasterEgg } from './egg'
 
 const hash = window.location.hash
 
-const INIT_SEQUENCE = ['cat /about.txt', 'help', 'ls -la /experiments']
+const INIT_SEQUENCE = ['cat /about.txt', 'ls -la', 'ls -la /talks']
 const INIT_SEQUENCE_CONTACT = ['ls -la /contact']
 
 const terminal = initTerminal({

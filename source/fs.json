@@ -2,7 +2,7 @@
   "/about.txt": {
     "name": "about.txt",
     "type": "txt",
-    "data": "Hi.<br/>My name is Mikhail. I'm a software engineer mostly focused on developer experience and advocacy. This is my home page.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code."
+    "data": "Hi.<br/>My name is Mikhail. I'm a software engineer mostly focused on developer experience, cutting-edge Web Platform features, AI and advocacy. This is my home page.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code."
   },
   "/contact/README.txt": {
     "name": "README.txt",
@@ -56,6 +56,12 @@
     "url": "https://github.com/mkrl/fibonacci-indent",
     "description": "Atom (you will never be forgotten) package that adjusts your indentation according to the Fibonacci sequence. Tabs or spaces, it doesn't matter. It's all about the numbers."
   },
+  "/experiments/graphql-detective": {
+    "name": "graphql-detective",
+    "type": "url",
+    "url": "https://github.com/mkrl/graphql-detective",
+    "description": "A library that detects unused GraphQL queries at runtime"
+  },
   "/experiments/misbrands": {
     "name": "misbrands",
     "type": "url",
@@ -103,6 +109,41 @@
     "type": "url",
     "url": "https://mkrl.xyz/ttty/",
     "description": "A very simple pure JS lightweight terminal \"emulator\" that's powering this very website. I managed to squeeze the basic functionality into ~5kb (non-minified)."
+  },
+  "/talks/ai-narrator": {
+    "name": "ai-narrator",
+    "type": "url",
+    "url": "https://www.youtube.com/live/xUmTPIRFVHQ?si=L7b92ZvLE2RY3bxg",
+    "description": "I made an AI narrator for my talks during my 6-hour train to Berlin. It is supposed to have a noir movie narrator personality, but the audience usually asks to make it sarcastic. The ultimate real-time RAG demo."
+  },
+  "/talks/frontend-tools-of-the-past-today-and-tomorrow": {
+    "name": "frontend-tools-of-the-past-today-and-tomorrow",
+    "type": "url",
+    "url": "https://www.youtube.com/watch?v=rZKhxW5pZnM&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc",
+    "description": "A big deep-dive on latest front-end tooling and infrastructure. Build tools, languages, bundlers and linters."
+  },
+  "/talks/README.txt": {
+    "name": "README.txt",
+    "type": "txt",
+    "data": "Some of my (public) talks and presentations"
+  },
+  "/talks/reverse-engineering": {
+    "name": "reverse-engineering",
+    "type": "url",
+    "url": "https://www.youtube.com/watch?v=LtQsXiQPdRU&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=4",
+    "description": "A deep dive on reverse-engineering a deployed NextJS app. Uncovering marketing secrets and lies that I made up!"
+  },
+  "/talks/lets-build-everything": {
+    "name": "lets-build-everything",
+    "type": "url",
+    "url": "https://www.youtube.com/watch?v=M6-Cgfu3a50&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=2",
+    "description": "A (fun) lightning talk on how I build and maintain everything I do. Sacred secrets and tricks to keep the juice flowing."
+  },
+  "/talks/watch-adblocker": {
+    "name": "watch-adblocker",
+    "type": "url",
+    "url": "https://www.youtube.com/watch?v=wNam9C_FOn4&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=3",
+    "description": "A (fun) lightning talk on how I used a Javascript smartwatch to become a Jedi."
   },
   "/contact": {
     "name": "contact",
@@ -169,6 +210,12 @@
         "description": "Atom (you will never be forgotten) package that adjusts your indentation according to the Fibonacci sequence. Tabs or spaces, it doesn't matter. It's all about the numbers."
       },
       {
+        "name": "graphql-detective",
+        "type": "url",
+        "url": "https://github.com/mkrl/graphql-detective",
+        "description": "A library that detects unused GraphQL queries at runtime"
+      },
+      {
         "name": "misbrands",
         "type": "url",
         "url": "https://github.com/mkrl/misbrands",
@@ -218,6 +265,48 @@
       }
     ]
   },
+  "/talks": {
+    "name": "talks",
+    "type": "dir",
+    "description": "Some of my (public) talks and presentations",
+    "entries": [
+      {
+        "name": "README.txt",
+        "type": "txt",
+        "data": "Some of my (public) talks and presentations"
+      },
+      {
+        "name": "ai-narrator",
+        "type": "url",
+        "url": "https://www.youtube.com/live/xUmTPIRFVHQ?si=L7b92ZvLE2RY3bxg",
+        "description": "I made an AI narrator for my talks during my 6-hour train to Berlin. It is supposed to have a noir movie narrator personality, but the audience usually asks to make it sarcastic. The ultimate real-time RAG demo."
+      },
+      {
+        "name": "frontend-tools-of-the-past-today-and-tomorrow",
+        "type": "url",
+        "url": "https://www.youtube.com/watch?v=rZKhxW5pZnM&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc",
+        "description": "A big deep-dive on latest front-end tooling and infrastructure. Build tools, languages, bundlers and linters."
+      },
+      {
+        "name": "lets-build-everything",
+        "type": "url",
+        "url": "https://www.youtube.com/watch?v=M6-Cgfu3a50&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=2",
+        "description": "A (fun) lightning talk on how I build and maintain everything I do. Sacred secrets and tricks to keep the juice flowing."
+      },
+      {
+        "name": "reverse-engineering",
+        "type": "url",
+        "url": "https://www.youtube.com/watch?v=LtQsXiQPdRU&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=4",
+        "description": "A deep dive on reverse-engineering a deployed NextJS app. Uncovering marketing secrets and lies that I made up!"
+      },
+      {
+        "name": "watch-adblocker",
+        "type": "url",
+        "url": "https://www.youtube.com/watch?v=wNam9C_FOn4&list=PLmWg6do-tdLkIe_l1oKfRurGpwpi27Hgc&index=3",
+        "description": "A (fun) lightning talk on how I used a Javascript smartwatch to become a Jedi."
+      }
+    ]
+  },
   "/": {
     "name": "fs",
     "type": "dir",
@@ -226,7 +315,7 @@
       {
         "name": "about.txt",
         "type": "txt",
-        "data": "Hi.<br/>My name is Mikhail. I'm a software engineer mostly focused on developer experience and advocacy. This is my home page.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code."
+        "data": "Hi.<br/>My name is Mikhail. I'm a software engineer mostly focused on developer experience, cutting-edge Web Platform features, AI and advocacy. This is my home page.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code."
       },
       {
         "name": "contact",
@@ -239,6 +328,12 @@
         "type": "dir",
         "description": "A compilation of my hobby projects in software, hardware and other (sometimes silly) things",
         "path": "/experiments"
+      },
+      {
+        "name": "talks",
+        "type": "dir",
+        "description": "Some of my (public) talks and presentations",
+        "path": "/talks"
       }
     ]
   }

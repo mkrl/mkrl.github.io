@@ -1,1 +1,1 @@
-Hi.<br/>My name is Mikhail. I'm a software engineer mostly focused on developer experience and advocacy. This is my home page.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code.
+Hi.<br/>My name is Mikhail. I'm a software engineer mostly focused on developer experience, cutting-edge Web Platform features, AI and advocacy. This is my home page.<br>If you need something, feel free to browse around.<br>My entire career is here, condensed in ~30 kilobytes of this website code.
