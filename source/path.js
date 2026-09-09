@@ -59,7 +59,9 @@ export const autocomplete = (terminal) => {
     const resolvedPath = resolvePath(lastWord)
 
     const directories = Object.keys(fs)
-    const matches = directories.filter(command => command.startsWith(resolvedPath))
+    const matches = directories
+      .filter(path => path.startsWith(resolvedPath))
+      .map(path => `${lastWord}${path.slice(resolvedPath.length)}`)
     insertSuggestion(input, matches, lastWord, ' ')
   }
 }
